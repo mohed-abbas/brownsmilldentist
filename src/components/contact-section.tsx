@@ -1,0 +1,137 @@
+"use client";
+
+import { useState, type FormEvent } from "react";
+import { CircleCheck } from "lucide-react";
+
+const contactInfo = [
+  {
+    title: "Get In Touch",
+    description:
+      "Whether you have a question about our services, need help with your account, or want to provide feedback.",
+  },
+  {
+    title: "Chat With Us",
+    description: "Our team is available to provide quick. friendly.",
+  },
+  {
+    title: "Call Us",
+    description:
+      "Need Immediate Assistance? Call us today, We're here to support your health journey.",
+  },
+];
+
+export function ContactSection() {
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
+  const [optIn, setOptIn] = useState(false);
+
+  function handleSubmit(e: FormEvent<HTMLFormElement>) {
+    e.preventDefault();
+  }
+
+  return (
+    <section id="contact" aria-label="Contact Us" className="flex flex-col items-center gap-10 xl:gap-[69px]">
+      {/* Section Header */}
+      <div className="flex w-full max-w-[719px] flex-col items-center gap-[21px] text-center">
+        <h2 className="text-display-section text-text-primary">Our Contact</h2>
+        <p className="text-body-lg text-text-secondary">
+          We&apos;re here to help you every step of the way
+        </p>
+      </div>
+
+      {/* Two-Column Layout */}
+      <div className="flex w-full flex-col gap-12 xl:flex-row xl:items-start xl:justify-between xl:gap-0">
+        {/* Left — Contact Form */}
+        <form
+          onSubmit={handleSubmit}
+          className="flex w-full flex-col gap-[38px] xl:w-[700px] xl:shrink-0"
+        >
+          {/* Name Field */}
+          <div className="flex flex-col gap-5">
+            <label htmlFor="contact-name" className="text-body-lg text-text-primary">
+              Name
+            </label>
+            <input
+              id="contact-name"
+              type="text"
+              value={name}
+              onChange={(e) => setName(e.target.value)}
+              placeholder='E.g "John"'
+              className="h-[84px] w-full rounded-pill border border-text-primary/50 bg-transparent px-6 text-body-lg text-text-primary placeholder:text-text-primary/50 focus:border-teal-500 focus:outline-none focus:ring-1 focus:ring-teal-500 transition-colors duration-[var(--duration-normal)]"
+            />
+          </div>
+
+          {/* Email Field */}
+          <div className="flex flex-col gap-5">
+            <label htmlFor="contact-email" className="text-body-lg text-text-primary">
+              Email Address
+            </label>
+            <input
+              id="contact-email"
+              type="email"
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+              placeholder='E.g "John@gmail.com"'
+              className="h-[84px] w-full rounded-pill border border-text-primary/50 bg-transparent px-6 text-body-lg text-text-primary placeholder:text-text-primary/50 focus:border-teal-500 focus:outline-none focus:ring-1 focus:ring-teal-500 transition-colors duration-[var(--duration-normal)]"
+            />
+          </div>
+
+          {/* Message Field */}
+          <div className="flex flex-col gap-5">
+            <label htmlFor="contact-message" className="text-body-lg text-text-primary">
+              Message
+            </label>
+            <textarea
+              id="contact-message"
+              value={message}
+              onChange={(e) => setMessage(e.target.value)}
+              placeholder="Your Message"
+              className="min-h-[277px] w-full resize-none rounded-pill border border-text-primary/50 bg-transparent px-6 pt-7 text-body-lg text-text-primary placeholder:text-text-primary/50 focus:border-teal-500 focus:outline-none focus:ring-1 focus:ring-teal-500 transition-colors duration-[var(--duration-normal)]"
+            />
+          </div>
+
+          {/* Opt-in Row */}
+          <button
+            type="button"
+            onClick={() => setOptIn(!optIn)}
+            className="flex items-center gap-2.5 text-left"
+            aria-pressed={optIn}
+          >
+            <CircleCheck
+              className={`size-6 shrink-0 transition-colors duration-[var(--duration-normal)] ${
+                optIn ? "text-teal-500" : "text-text-primary"
+              }`}
+              strokeWidth={2}
+            />
+            <span className="text-body-lg text-text-primary">
+              Stay on Top of Your Wellness
+            </span>
+          </button>
+
+          {/* Submit Button */}
+          <button
+            type="submit"
+            className="w-full rounded-button bg-teal-500 px-[25px] py-[15px] text-body-lg font-semibold text-text-on-dark tracking-[-0.025rem] transition-colors duration-[var(--duration-normal)] hover:bg-teal-400 active:bg-teal-800"
+          >
+            Send Your Message Here
+          </button>
+        </form>
+
+        {/* Right — Contact Info */}
+        <div className="flex w-full flex-col gap-12 xl:w-[580px] xl:shrink-0 xl:gap-[79px]">
+          {contactInfo.map((item) => (
+            <div key={item.title} className="flex flex-col gap-[23px]">
+              <h3 className="text-heading-contact text-teal-500">
+                {item.title}
+              </h3>
+              <p className="text-body-lg text-text-secondary">
+                {item.description}
+              </p>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+}
