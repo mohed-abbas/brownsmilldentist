@@ -1,0 +1,54 @@
+services:
+  # ===========================================================================
+  # Development service: hot reload via volume mounts
+  # Usage: docker compose up dev
+  # ===========================================================================
+  dev:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      target: deps
+    command: sh -c "corepack enable && corepack prepare pnpm@latest --activate && pnpm dev --turbopack --hostname 0.0.0.0"
+    ports:
+      - "3000:3000"
+    volumes:
+      - .:/app
+      - /app/node_modules
+    environment:
+      - NODE_ENV=development
+      - NEXT_TELEMETRY_DISABLED=1
+      - WATCHPACK_POLLING=true
+    env_file:
+      - path: .env.local
+        required: false
+    profiles:
+      - dev
+
+  # ===========================================================================
+  # Production service: optimized standalone build
+  # Usage: docker compose --profile production up -d
+  # ===========================================================================
+  production:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      target: runner
+    ports:
+      - "3000:3000"
+    environment:
+      - NODE_ENV=production
+      - NEXT_TELEMETRY_DISABLED=1
+    env_file:
+      - path: .env.production.local
+        required: false
+    restart: unless-stopped
+    deploy:
+      resources:
+        limits:
+          memory: 512M
+          cpus: "1.0"
+        reservations:
+          memory: 256M
+          cpus: "0.25"
+    profiles:
+      - production
