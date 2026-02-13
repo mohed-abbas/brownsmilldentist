@@ -22,6 +22,7 @@ const buttonVariants = cva(
         hero: "bg-white text-text-primary hover:bg-gray-100 active:bg-gray-200 focus-visible:ring-teal-500 rounded-[var(--radius-button)]",
         teal: "bg-teal-400 text-white hover:bg-teal-300 active:bg-teal-500 focus-visible:ring-teal-300 rounded-[var(--radius-button)]",
         "ghost-arrow": "bg-transparent text-teal-400 hover:text-teal-300 underline-offset-4 hover:underline p-0",
+        "outline-teal": "bg-transparent text-teal-500 border border-teal-500 hover:bg-teal-50 active:bg-teal-100 focus-visible:ring-teal-300 rounded-[var(--radius-button)]",
         "outline-white": "bg-transparent text-white border border-white hover:bg-white/10 focus-visible:ring-white rounded-[var(--radius-button)]",
       },
       size: {

@@ -150,6 +150,11 @@
   --text-display-section-ls: -0.089rem;
   --text-display-section-weight: 400;
 
+  --text-heading-xl: 3.5rem;
+  --text-heading-xl-lh: 1.2;
+  --text-heading-xl-ls: -0.07rem;
+  --text-heading-xl-weight: 500;
+
   --text-heading-lg: 2.375rem;
   --text-heading-lg-lh: 1.15;
   --text-heading-lg-weight: 700;
@@ -255,6 +260,14 @@
     line-height: var(--text-display-section-lh);
     letter-spacing: var(--text-display-section-ls);
     font-weight: var(--text-display-section-weight);
+  }
+
+  .text-heading-xl {
+    font-family: var(--font-haffer);
+    font-size: clamp(1.75rem, 3.7vw, 3.5rem);
+    line-height: var(--text-heading-xl-lh);
+    letter-spacing: var(--text-heading-xl-ls);
+    font-weight: var(--text-heading-xl-weight);
   }
 
   .text-heading-lg {
