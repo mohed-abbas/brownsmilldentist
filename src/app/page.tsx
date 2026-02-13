@@ -3,6 +3,7 @@ import { Hero } from "@/components/hero";
 import { PartnersBar } from "@/components/partners-bar";
 import { OurFeatures } from "@/components/our-features";
 import { MoreFeatures } from "@/components/more-features";
+import { OurDoctors } from "@/components/our-doctors";
 
 export default function Home() {
   return (
@@ -17,6 +18,9 @@ export default function Home() {
       </div>
       <div className="mt-[var(--section-gap-mobile)] md:mt-[var(--section-gap-tablet)] xl:mt-[var(--section-gap)]">
         <MoreFeatures />
+      </div>
+      <div className="mt-[var(--section-gap-mobile)] md:mt-[var(--section-gap-tablet)] xl:mt-[var(--section-gap)]">
+        <OurDoctors />
       </div>
     </main>
   );
