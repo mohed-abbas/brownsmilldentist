@@ -1,51 +1,5 @@
 import Link from "next/link";
-
-const footerColumns = [
-  {
-    title: "Company",
-    links: [
-      { label: "About Us", href: "#" },
-      { label: "Partner", href: "#" },
-      { label: "Story", href: "#" },
-      { label: "Case Study", href: "#" },
-      { label: "Customer Support", href: "#" },
-    ],
-  },
-  {
-    title: "Product",
-    links: [
-      { label: "Get help", href: "#" },
-      { label: "FAQ", href: "#" },
-      { label: "Blog", href: "#" },
-      { label: "Newcomers", href: "#" },
-    ],
-  },
-  {
-    title: "Learning",
-    links: [
-      { label: "Legal", href: "#" },
-      { label: "Privacy", href: "#" },
-      { label: "Terms", href: "#" },
-      { label: "Communities", href: "#" },
-    ],
-  },
-  {
-    title: "Resources",
-    links: [
-      { label: "Tutorials", href: "#" },
-      { label: "Editorials", href: "#" },
-      { label: "Product", href: "#" },
-      { label: "Newsroom", href: "#" },
-    ],
-  },
-];
-
-const socialLinks = [
-  { icon: "/assets/icons/icon-facebook.svg", alt: "Facebook", href: "#", width: 9, height: 18 },
-  { icon: "/assets/icons/icon-twitter.svg", alt: "Twitter", href: "#", width: 20, height: 16 },
-  { icon: "/assets/icons/icon-instagram.svg", alt: "Instagram", href: "#", width: 20, height: 20 },
-  { icon: "/assets/icons/icon-combined-shape.svg", alt: "Vimeo", href: "#", width: 16, height: 16 },
-];
+import { footer } from "@/content";
 
 export function Footer() {
   return (
@@ -56,7 +10,7 @@ export function Footer() {
           aria-label="Footer navigation"
           className="grid grid-cols-2 gap-x-6 gap-y-10 md:grid-cols-4 md:gap-x-8 xl:gap-x-12"
         >
-          {footerColumns.map((column) => (
+          {footer.columns.map((column) => (
             <div key={column.title}>
               <h3 className="text-[1.125rem] font-medium leading-[1.47] text-text-on-dark mb-6">
                 {column.title}
@@ -80,10 +34,10 @@ export function Footer() {
         {/* Divider area — copyright + socials */}
         <div className="mt-16 md:mt-20 xl:mt-24 flex flex-col items-center gap-5">
           <p className="text-[1rem] leading-[1.625] text-text-on-dark text-center">
-            &copy; 2026 Dentu. All rights reserved.
+            {footer.copyright}
           </p>
           <div className="flex items-center gap-5">
-            {socialLinks.map((social) => (
+            {footer.socials.map((social) => (
               <Link
                 key={social.alt}
                 href={social.href}

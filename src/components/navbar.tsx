@@ -1,12 +1,6 @@
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
-
-const navLinks = [
-  { label: "About", href: "#about" },
-  { label: "Our Services", href: "#services" },
-  { label: "Doctor", href: "#doctor" },
-  { label: "FAQ", href: "#faq" },
-];
+import { site, navigation } from "@/content";
 
 export function Navbar() {
   return (
@@ -18,11 +12,11 @@ export function Navbar() {
         href="/"
         className="text-heading-md font-semibold text-white tracking-[-0.02em]"
       >
-        Brown&apos;s Mill
+        {site.brand}
       </Link>
 
       <div className="hidden md:flex items-center gap-[67px]">
-        {navLinks.map((link) => (
+        {navigation.links.map((link) => (
           <Link
             key={link.href}
             href={link.href}
@@ -39,7 +33,7 @@ export function Navbar() {
         asChild
         className="hidden md:inline-flex font-semibold"
       >
-        <Link href="#contact">Contact Us</Link>
+        <Link href={navigation.cta.href}>{navigation.cta.label}</Link>
       </Button>
     </nav>
   );

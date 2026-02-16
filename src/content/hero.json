@@ -1,0 +1,38 @@
+{
+  "badges": ["Dental Care", "Oral Health"],
+  "headline": "Healthy Smiles Start Here",
+  "subtext": "Welcome to Your Trusted Dental Care Center – Comprehensive Dentistry for All",
+  "cta": {
+    "label": "Book Appointment",
+    "href": "#contact"
+  },
+  "membersStats": "14K+ Happy Patients",
+  "doctorStats": "20+ YEARS EXPERIENCE",
+  "sideText": "Decades of combined experience in general, cosmetic, and restorative dentistry",
+  "avatars": {
+    "patients": [
+      { "src": "/assets/images/avatar-1.jpg", "alt": "Happy patient" },
+      { "src": "/assets/images/avatar-2.jpg", "alt": "Happy patient" },
+      { "src": "/assets/images/avatar-3.jpg", "alt": "Happy patient" }
+    ],
+    "doctors": [
+      { "src": "/assets/images/avatar-4.jpg", "alt": "Expert doctor" },
+      { "src": "/assets/images/avatar-5.jpg", "alt": "Expert doctor" },
+      { "src": "/assets/images/avatar-6.jpg", "alt": "Expert doctor" }
+    ]
+  },
+  "images": {
+    "center": {
+      "src": "/assets/images/hero-center.png",
+      "alt": "Dental professionals providing expert care",
+      "width": 573,
+      "height": 807
+    },
+    "rightCard": {
+      "src": "/assets/images/hero-right-card.jpg",
+      "alt": "Dental care in action",
+      "width": 290,
+      "height": 509
+    }
+  }
+}

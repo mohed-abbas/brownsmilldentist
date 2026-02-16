@@ -3,27 +3,7 @@
 import { useState, useEffect, useCallback } from "react";
 import Image from "next/image";
 import { ArrowLeft, ArrowRight } from "lucide-react";
-
-const doctors = [
-  {
-    name: "Dr. Handoyoni",
-    role: "Owner",
-    image: "/assets/images/doctor-handoyoni.jpg",
-    alt: "Dr. Handoyoni, practice owner",
-  },
-  {
-    name: "Dr. Mika Israf",
-    role: "Junior Dentist",
-    image: "/assets/images/doctor-mika-israf.jpg",
-    alt: "Dr. Mika Israf, junior dentist",
-  },
-  {
-    name: "Dr. Andreas Druft",
-    role: "Senior Dentist",
-    image: "/assets/images/doctor-andreas-druft.jpg",
-    alt: "Dr. Andreas Druft, senior dentist",
-  },
-];
+import { doctors as doctorsContent } from "@/content";
 
 const GAP = 20;
 
@@ -49,7 +29,7 @@ export function OurDoctors() {
   const [currentIndex, setCurrentIndex] = useState(0);
   const visibleCount = useVisibleCount();
 
-  const maxIndex = Math.max(0, doctors.length - visibleCount);
+  const maxIndex = Math.max(0, doctorsContent.doctors.length - visibleCount);
   const isScrollable = maxIndex > 0;
   const canPrev = currentIndex > 0;
   const canNext = currentIndex < maxIndex;
@@ -76,11 +56,10 @@ export function OurDoctors() {
         <div className="flex items-end justify-between gap-8">
           <div className="flex max-w-[515px] flex-col gap-[29px]">
             <h2 className="text-display-section text-text-primary">
-              Meet Our Experts Dentist
+              {doctorsContent.headline}
             </h2>
             <p className="text-body-lg text-text-secondary">
-              Our app and Concierge team make it easy to find the best providers
-              that are in-network, available and near you
+              {doctorsContent.description}
             </p>
           </div>
 
@@ -116,7 +95,7 @@ export function OurDoctors() {
             role="group"
             aria-label="Doctor cards"
           >
-            {doctors.map((doctor) => (
+            {doctorsContent.doctors.map((doctor) => (
               <article
                 key={doctor.name}
                 className="shrink-0 overflow-hidden rounded-[var(--radius-container)] bg-white shadow-[0px_8px_14px_0px_rgba(0,0,0,0.07)]"

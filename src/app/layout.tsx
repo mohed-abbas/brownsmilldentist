@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import localFont from "next/font/local";
 import { DM_Sans } from "next/font/google";
 import "./globals.css";
+import { site } from "@/content";
 
 const haffer = localFont({
   src: [
@@ -33,9 +34,8 @@ const dmSans = DM_Sans({
 });
 
 export const metadata: Metadata = {
-  title: "Brown's Mill Dentist",
-  description:
-    "Expert dental care for beautiful smiles. Trust our experienced professionals to maintain and enhance the beauty of your smile.",
+  title: site.seo.title,
+  description: site.seo.description,
 };
 
 export default function RootLayout({

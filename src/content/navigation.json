@@ -1,0 +1,12 @@
+{
+  "links": [
+    { "label": "About", "href": "#about" },
+    { "label": "Our Services", "href": "#services" },
+    { "label": "Doctor", "href": "#doctor" },
+    { "label": "FAQ", "href": "#faq" }
+  ],
+  "cta": {
+    "label": "Contact Us",
+    "href": "#contact"
+  }
+}

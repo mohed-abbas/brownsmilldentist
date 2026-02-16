@@ -1,0 +1,9 @@
+{
+  "partners": [
+    { "name": "Doctorly", "icon": "/assets/logos/logo-doctorly.svg" },
+    { "name": "Natural", "icon": "/assets/logos/logo-natural.svg" },
+    { "name": "Marketly", "icon": null },
+    { "name": "Blockly", "icon": "/assets/logos/logo-blockly.svg" },
+    { "name": "Codelify", "icon": "/assets/logos/logo-codelify.svg" }
+  ]
+}

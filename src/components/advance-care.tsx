@@ -7,27 +7,7 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
-
-const accordionItems = [
-  {
-    value: "innovation",
-    title: "Innovation Technology",
-    content:
-      "We use cutting-edge dental technology including digital X-rays, 3D imaging, and laser dentistry to ensure precise, comfortable treatments with faster recovery times.",
-  },
-  {
-    value: "doctors",
-    title: "Qualified Doctors",
-    content:
-      "Our team of board-certified dentists brings decades of combined experience, with specialized training in cosmetic, restorative, and preventive dentistry.",
-  },
-  {
-    value: "comfort",
-    title: "Comfort & Coziness",
-    content:
-      "From our welcoming waiting area to our gentle care approach, every aspect of our practice is designed to make your dental visit as comfortable and stress-free as possible.",
-  },
-];
+import { faq } from "@/content";
 
 export function AdvanceCare() {
   return (
@@ -35,11 +15,10 @@ export function AdvanceCare() {
       {/* Header */}
       <div className="mx-auto flex max-w-[719px] flex-col items-center gap-6 text-center xl:gap-9">
         <h2 className="text-display-section text-text-primary">
-          Advanced Dental Care with Human Touch
+          {faq.headline}
         </h2>
         <p className="text-body-lg text-text-secondary">
-          Our app and Concierge team make it easy to find the best providers
-          that are in-network, available and near you
+          {faq.description}
         </p>
       </div>
 
@@ -48,8 +27,8 @@ export function AdvanceCare() {
         {/* Clinic Image */}
         <div className="relative aspect-[820/561] w-full overflow-hidden rounded-[2.5rem] xl:w-[57.75%]">
           <Image
-            src="/assets/images/advanced-care-clinic.jpg"
-            alt="Modern dental clinic with state-of-the-art equipment"
+            src={faq.image.src}
+            alt={faq.image.alt}
             fill
             className="object-cover"
             sizes="(max-width: 1280px) 100vw, 57.75vw"
@@ -60,11 +39,11 @@ export function AdvanceCare() {
         <div className="w-full rounded-[2.5rem] bg-[var(--surface-white)] px-6 py-8 shadow-[0px_8px_14px_0px_rgba(0,0,0,0.07)] md:px-8 md:py-10 xl:absolute xl:left-[42.25%] xl:top-[67px] xl:w-[57.75%] xl:px-10 xl:py-12">
           <div className="mx-auto flex w-full flex-col gap-8 xl:max-w-[739px] xl:gap-[51px]">
             <h3 className="font-medium text-text-primary text-[clamp(1.75rem,3.5vw,2.4375rem)] leading-[1.2] tracking-[-0.05em]">
-              Why Choose Us?
+              {faq.subHeadline}
             </h3>
 
             <Accordion type="single" collapsible>
-              {accordionItems.map((item) => (
+              {faq.items.map((item) => (
                 <AccordionItem
                   key={item.value}
                   value={item.value}

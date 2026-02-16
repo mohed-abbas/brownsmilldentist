@@ -2,23 +2,7 @@
 
 import { useState, type FormEvent } from "react";
 import { CircleCheck } from "lucide-react";
-
-const contactInfo = [
-  {
-    title: "Get In Touch",
-    description:
-      "Whether you have a question about our services, need help with your account, or want to provide feedback.",
-  },
-  {
-    title: "Chat With Us",
-    description: "Our team is available to provide quick. friendly.",
-  },
-  {
-    title: "Call Us",
-    description:
-      "Need Immediate Assistance? Call us today, We're here to support your health journey.",
-  },
-];
+import { contact } from "@/content";
 
 export function ContactSection() {
   const [name, setName] = useState("");
@@ -34,9 +18,9 @@ export function ContactSection() {
     <section id="contact" aria-label="Contact Us" className="flex flex-col items-center gap-10 xl:gap-[69px]">
       {/* Section Header */}
       <div className="flex w-full max-w-[719px] flex-col items-center gap-[21px] text-center">
-        <h2 className="text-display-section text-text-primary">Our Contact</h2>
+        <h2 className="text-display-section text-text-primary">{contact.headline}</h2>
         <p className="text-body-lg text-text-secondary">
-          We&apos;re here to help you every step of the way
+          {contact.subheadline}
         </p>
       </div>
 
@@ -49,44 +33,44 @@ export function ContactSection() {
         >
           {/* Name Field */}
           <div className="flex flex-col gap-5">
-            <label htmlFor="contact-name" className="text-body-lg text-text-primary">
-              Name
+            <label htmlFor={contact.form.fields[0].id} className="text-body-lg text-text-primary">
+              {contact.form.fields[0].label}
             </label>
             <input
-              id="contact-name"
+              id={contact.form.fields[0].id}
               type="text"
               value={name}
               onChange={(e) => setName(e.target.value)}
-              placeholder='E.g "John"'
+              placeholder={contact.form.fields[0].placeholder}
               className="h-[84px] w-full rounded-pill border border-text-primary/50 bg-transparent px-6 text-body-lg text-text-primary placeholder:text-text-primary/50 focus:border-teal-500 focus:outline-none focus:ring-1 focus:ring-teal-500 transition-colors duration-[var(--duration-normal)]"
             />
           </div>
 
           {/* Email Field */}
           <div className="flex flex-col gap-5">
-            <label htmlFor="contact-email" className="text-body-lg text-text-primary">
-              Email Address
+            <label htmlFor={contact.form.fields[1].id} className="text-body-lg text-text-primary">
+              {contact.form.fields[1].label}
             </label>
             <input
-              id="contact-email"
+              id={contact.form.fields[1].id}
               type="email"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
-              placeholder='E.g "John@gmail.com"'
+              placeholder={contact.form.fields[1].placeholder}
               className="h-[84px] w-full rounded-pill border border-text-primary/50 bg-transparent px-6 text-body-lg text-text-primary placeholder:text-text-primary/50 focus:border-teal-500 focus:outline-none focus:ring-1 focus:ring-teal-500 transition-colors duration-[var(--duration-normal)]"
             />
           </div>
 
           {/* Message Field */}
           <div className="flex flex-col gap-5">
-            <label htmlFor="contact-message" className="text-body-lg text-text-primary">
-              Message
+            <label htmlFor={contact.form.fields[2].id} className="text-body-lg text-text-primary">
+              {contact.form.fields[2].label}
             </label>
             <textarea
-              id="contact-message"
+              id={contact.form.fields[2].id}
               value={message}
               onChange={(e) => setMessage(e.target.value)}
-              placeholder="Your Message"
+              placeholder={contact.form.fields[2].placeholder}
               className="min-h-[277px] w-full resize-none rounded-pill border border-text-primary/50 bg-transparent px-6 pt-7 text-body-lg text-text-primary placeholder:text-text-primary/50 focus:border-teal-500 focus:outline-none focus:ring-1 focus:ring-teal-500 transition-colors duration-[var(--duration-normal)]"
             />
           </div>
@@ -105,7 +89,7 @@ export function ContactSection() {
               strokeWidth={2}
             />
             <span className="text-body-lg text-text-primary">
-              Stay on Top of Your Wellness
+              {contact.form.optInLabel}
             </span>
           </button>
 
@@ -114,13 +98,13 @@ export function ContactSection() {
             type="submit"
             className="w-full rounded-button bg-teal-500 px-[25px] py-[15px] text-body-lg font-semibold text-text-on-dark tracking-[-0.025rem] transition-colors duration-[var(--duration-normal)] hover:bg-teal-400 active:bg-teal-800"
           >
-            Send Your Message Here
+            {contact.form.submitLabel}
           </button>
         </form>
 
         {/* Right — Contact Info */}
         <div className="flex w-full flex-col gap-12 xl:w-[580px] xl:shrink-0 xl:gap-[79px]">
-          {contactInfo.map((item) => (
+          {contact.info.map((item) => (
             <div key={item.title} className="flex flex-col gap-[23px]">
               <h3 className="text-heading-contact text-teal-500">
                 {item.title}

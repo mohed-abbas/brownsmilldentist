@@ -1,30 +1,10 @@
 import Link from "next/link";
-import { AudioLines, Grid2x2, Activity, Command } from "lucide-react";
+import { AudioLines, Grid2x2, Activity, Command, type LucideIcon } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { FeatureCard } from "@/components/feature-card";
+import { features as featuresContent } from "@/content";
 
-const features = [
-  {
-    icon: AudioLines,
-    title: "Online Consultation with Experts:",
-    description: "Get immediate access to a trusted network.",
-  },
-  {
-    icon: Grid2x2,
-    title: "Online Consultation with Experts:",
-    description: "Get immediate access to a trusted network.",
-  },
-  {
-    icon: Activity,
-    title: "Online Consultation with Experts:",
-    description: "Get immediate access to a trusted network.",
-  },
-  {
-    icon: Command,
-    title: "Online Consultation with Experts:",
-    description: "Get immediate access to a trusted network.",
-  },
-];
+const iconMap: Record<string, LucideIcon> = { AudioLines, Grid2x2, Activity, Command };
 
 export function OurFeatures() {
   return (
@@ -32,15 +12,14 @@ export function OurFeatures() {
       {/* Left Column — Text + CTA */}
       <div className="flex w-full flex-col xl:w-[614px] xl:shrink-0">
         <div className="flex flex-col gap-[18px]">
-          <p className="text-heading-sm text-text-primary">Our Feature</p>
+          <p className="text-heading-sm text-text-primary">{featuresContent.label}</p>
           <h2 className="text-display-section text-text-primary">
-            Transforming Health from Routine to Exploration
+            {featuresContent.headline}
           </h2>
         </div>
 
         <p className="text-body-lg text-text-secondary mt-8 xl:mt-[55px]">
-          With our superior features, you can live your health journey
-          stress-free and with passion
+          {featuresContent.description}
         </p>
 
         <div className="mt-8 xl:mt-[55px]">
@@ -50,19 +29,19 @@ export function OurFeatures() {
             asChild
             className="font-semibold"
           >
-            <Link href="#features">Explore More</Link>
+            <Link href={featuresContent.cta.href}>{featuresContent.cta.label}</Link>
           </Button>
         </div>
       </div>
 
       {/* Right Column — 2×2 Card Grid */}
       <div className="grid w-full grid-cols-1 gap-5 sm:grid-cols-2 sm:gap-x-5 sm:gap-y-[21px] xl:w-[700px] xl:shrink-0">
-        {features.map((feature, i) => (
+        {featuresContent.cards.map((card, i) => (
           <FeatureCard
             key={i}
-            icon={feature.icon}
-            title={feature.title}
-            description={feature.description}
+            icon={iconMap[card.icon]}
+            title={card.title}
+            description={card.description}
           />
         ))}
       </div>

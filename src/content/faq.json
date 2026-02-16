@@ -1,0 +1,26 @@
+{
+  "headline": "Advanced Dental Care with Human Touch",
+  "description": "Our app and Concierge team make it easy to find the best providers that are in-network, available and near you",
+  "subHeadline": "Why Choose Us?",
+  "image": {
+    "src": "/assets/images/advanced-care-clinic.jpg",
+    "alt": "Modern dental clinic with state-of-the-art equipment"
+  },
+  "items": [
+    {
+      "value": "innovation",
+      "title": "Innovation Technology",
+      "content": "We use cutting-edge dental technology including digital X-rays, 3D imaging, and laser dentistry to ensure precise, comfortable treatments with faster recovery times."
+    },
+    {
+      "value": "doctors",
+      "title": "Qualified Doctors",
+      "content": "Our team of board-certified dentists brings decades of combined experience, with specialized training in cosmetic, restorative, and preventive dentistry."
+    },
+    {
+      "value": "comfort",
+      "title": "Comfort & Coziness",
+      "content": "From our welcoming waiting area to our gentle care approach, every aspect of our practice is designed to make your dental visit as comfortable and stress-free as possible."
+    }
+  ]
+}

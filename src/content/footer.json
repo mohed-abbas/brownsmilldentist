@@ -1,0 +1,48 @@
+{
+  "columns": [
+    {
+      "title": "Company",
+      "links": [
+        { "label": "About Us", "href": "#" },
+        { "label": "Partner", "href": "#" },
+        { "label": "Story", "href": "#" },
+        { "label": "Case Study", "href": "#" },
+        { "label": "Customer Support", "href": "#" }
+      ]
+    },
+    {
+      "title": "Product",
+      "links": [
+        { "label": "Get help", "href": "#" },
+        { "label": "FAQ", "href": "#" },
+        { "label": "Blog", "href": "#" },
+        { "label": "Newcomers", "href": "#" }
+      ]
+    },
+    {
+      "title": "Learning",
+      "links": [
+        { "label": "Legal", "href": "#" },
+        { "label": "Privacy", "href": "#" },
+        { "label": "Terms", "href": "#" },
+        { "label": "Communities", "href": "#" }
+      ]
+    },
+    {
+      "title": "Resources",
+      "links": [
+        { "label": "Tutorials", "href": "#" },
+        { "label": "Editorials", "href": "#" },
+        { "label": "Product", "href": "#" },
+        { "label": "Newsroom", "href": "#" }
+      ]
+    }
+  ],
+  "copyright": "\u00a9 2026 Dentu. All rights reserved.",
+  "socials": [
+    { "icon": "/assets/icons/icon-facebook.svg", "alt": "Facebook", "href": "#", "width": 9, "height": 18 },
+    { "icon": "/assets/icons/icon-twitter.svg", "alt": "Twitter", "href": "#", "width": 20, "height": 16 },
+    { "icon": "/assets/icons/icon-instagram.svg", "alt": "Instagram", "href": "#", "width": 20, "height": 20 },
+    { "icon": "/assets/icons/icon-combined-shape.svg", "alt": "Vimeo", "href": "#", "width": 16, "height": 16 }
+  ]
+}

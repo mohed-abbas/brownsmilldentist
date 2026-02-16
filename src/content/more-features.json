@@ -1,0 +1,34 @@
+{
+  "top": {
+    "headline": "More Intelligence and Tools to Analyze Providers Effectively",
+    "description": "Our app and Concierge team make it easy to find the best providers that are in-network, available and near you",
+    "cta": {
+      "label": "See how it works",
+      "href": "#how-it-works"
+    },
+    "images": {
+      "small": {
+        "src": "/assets/images/more-features-1.jpg",
+        "alt": "Patient smiling during dental visit"
+      },
+      "large": {
+        "src": "/assets/images/more-features-2.jpg",
+        "alt": "Dentist providing care to patient"
+      }
+    }
+  },
+  "bottom": {
+    "headline": "Simplified Solutions for Finding Your Doctor",
+    "description": "Our app and Concierge team make it easy to find the best providers that are in-network, available and near you",
+    "images": {
+      "left": {
+        "src": "/assets/images/more-features-4.jpg",
+        "alt": "Dental mirror close-up"
+      },
+      "center": {
+        "src": "/assets/images/more-features-3.jpg",
+        "alt": "Modern dental equipment"
+      }
+    }
+  }
+}

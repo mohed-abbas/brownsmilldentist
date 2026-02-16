@@ -4,18 +4,7 @@ import { ArrowUpRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { BadgeTag } from "@/components/badge-tag";
 import { AvatarStack } from "@/components/avatar-stack";
-
-const heroAvatars = [
-  { src: "/assets/images/avatar-1.jpg", alt: "Happy patient" },
-  { src: "/assets/images/avatar-2.jpg", alt: "Happy patient" },
-  { src: "/assets/images/avatar-3.jpg", alt: "Happy patient" },
-];
-
-const doctorAvatars = [
-  { src: "/assets/images/avatar-4.jpg", alt: "Expert doctor" },
-  { src: "/assets/images/avatar-5.jpg", alt: "Expert doctor" },
-  { src: "/assets/images/avatar-6.jpg", alt: "Expert doctor" },
-];
+import { hero } from "@/content";
 
 export function Hero() {
   return (
@@ -26,23 +15,23 @@ export function Hero() {
       {/* Desktop layout: absolute positioning to match Figma overlapping columns */}
 
       {/* Left Column */}
-      <div className="relative z-10 flex flex-col gap-10 px-6 pt-8 pb-6 sm:gap-16 sm:px-10 sm:pt-16 sm:pb-10 xl:absolute xl:left-[51px] xl:top-[94px] xl:w-[512px] xl:gap-[92px] xl:px-0 xl:pt-0 xl:pb-0">
+      <div className="relative z-10 flex flex-col gap-10 px-6 pt-8 pb-6 sm:gap-16 sm:px-10 sm:pt-16 sm:pb-10 xl:absolute xl:left-[3.59%] xl:top-[94px] xl:w-[36.06%] xl:gap-[92px] xl:px-0 xl:pt-0 xl:pb-0">
         {/* Badges + Headline */}
         <div className="flex flex-col gap-[26px]">
           <div className="flex gap-[7px] flex-wrap">
-            <BadgeTag>Dental Care</BadgeTag>
-            <BadgeTag>Oral Health</BadgeTag>
+            {hero.badges.map((badge) => (
+              <BadgeTag key={badge}>{badge}</BadgeTag>
+            ))}
           </div>
           <h1 className="text-display-hero text-white">
-            Expert Care for Beautiful Smiles
+            {hero.headline}
           </h1>
         </div>
 
         {/* Subtext + CTA */}
         <div className="flex flex-col gap-[34px] max-w-[325px]">
           <p className="text-body-lg text-white">
-            Trust our experienced professionals to maintain and enhance the
-            beauty for your smile with every visit
+            {hero.subtext}
           </p>
 
           <div className="flex items-center gap-[30px]">
@@ -52,38 +41,38 @@ export function Hero() {
               asChild
               className="font-semibold"
             >
-              <Link href="#contact">Try for free</Link>
+              <Link href={hero.cta.href}>{hero.cta.label}</Link>
             </Button>
-            <AvatarStack avatars={heroAvatars} />
+            <AvatarStack avatars={hero.avatars.patients} />
           </div>
 
           <p className="text-body-lg text-white tracking-[-0.02em]">
-            5.4M+ Happy Members
+            {hero.membersStats}
           </p>
         </div>
       </div>
 
       {/* Center Column — Hero Image (desktop: absolute, overlaps left column) */}
-      <div className="hidden xl:block xl:absolute xl:left-[478px] xl:bottom-[5%] xl:w-[573px] xl:h-[807px]">
+      <div className="hidden xl:block xl:absolute xl:left-[33.66%] xl:top-[33px] xl:w-[40.35%] xl:h-[807px]">
         <Image
-          src="/assets/images/hero-center.png"
-          alt="Dental professionals providing expert care"
-          width={573}
-          height={807}
+          src={hero.images.center.src}
+          alt={hero.images.center.alt}
+          width={hero.images.center.width!}
+          height={hero.images.center.height!}
           className="size-full object-contain"
           priority
         />
       </div>
 
       {/* Right Column (desktop only) */}
-      <div className="hidden xl:flex xl:absolute xl:left-[1102px] xl:bottom-[5%] xl:w-[290px] flex-col gap-[92px]">
+      <div className="hidden xl:flex xl:absolute xl:left-[77.61%] xl:top-[77px] xl:w-[20.42%] xl:h-[763px] flex-col justify-between">
         {/* Doctor Stats */}
-        <div className="flex flex-col gap-[23px] w-[281px]">
+        <div className="flex flex-col gap-[23px] w-full">
           <p className="text-body-md text-white tracking-[-0.02em]">
-            458 EXPERT DOCTOR
+            {hero.doctorStats}
           </p>
           <div className="flex items-center justify-between w-full">
-            <AvatarStack avatars={doctorAvatars} />
+            <AvatarStack avatars={hero.avatars.doctors} />
             <button
               aria-label="View all doctors"
               className="flex size-[50px] items-center justify-center rounded-full border border-white/30 text-white transition-colors duration-200 hover:bg-white/10"
@@ -96,15 +85,14 @@ export function Hero() {
         {/* Description + Image Card */}
         <div className="flex flex-col gap-[35px]">
           <p className="text-body-md text-white">
-            We take meticulous care of your dental needs to ensure a healthy,
-            lasting smile
+            {hero.sideText}
           </p>
           <div className="h-[509px] w-full overflow-hidden rounded-[var(--radius-container)]">
             <Image
-              src="/assets/images/hero-right-card.jpg"
-              alt="Dental care in action"
-              width={290}
-              height={509}
+              src={hero.images.rightCard.src}
+              alt={hero.images.rightCard.alt}
+              width={hero.images.rightCard.width!}
+              height={hero.images.rightCard.height!}
               className="size-full object-cover"
             />
           </div>
@@ -114,10 +102,10 @@ export function Hero() {
       {/* Mobile/Tablet: Show center image below content */}
       <div className="relative xl:hidden flex justify-center px-6 pb-8">
         <Image
-          src="/assets/images/hero-center.png"
-          alt="Dental professionals providing expert care"
-          width={573}
-          height={807}
+          src={hero.images.center.src}
+          alt={hero.images.center.alt}
+          width={hero.images.center.width!}
+          height={hero.images.center.height!}
           className="max-w-full h-auto object-contain"
           priority
         />

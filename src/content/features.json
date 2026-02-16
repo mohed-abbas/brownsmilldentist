@@ -1,0 +1,31 @@
+{
+  "label": "Our Feature",
+  "headline": "Transforming Health from Routine to Exploration",
+  "description": "With our superior features, you can live your health journey stress-free and with passion",
+  "cta": {
+    "label": "Explore More",
+    "href": "#features"
+  },
+  "cards": [
+    {
+      "icon": "AudioLines",
+      "title": "Online Consultation with Experts:",
+      "description": "Get immediate access to a trusted network."
+    },
+    {
+      "icon": "Grid2x2",
+      "title": "Online Consultation with Experts:",
+      "description": "Get immediate access to a trusted network."
+    },
+    {
+      "icon": "Activity",
+      "title": "Online Consultation with Experts:",
+      "description": "Get immediate access to a trusted network."
+    },
+    {
+      "icon": "Command",
+      "title": "Online Consultation with Experts:",
+      "description": "Get immediate access to a trusted network."
+    }
+  ]
+}
