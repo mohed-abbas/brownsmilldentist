@@ -1,44 +1,40 @@
 {
   "columns": [
     {
+      "title": "Services",
+      "links": [
+        { "label": "Cosmetic Dentistry", "href": "#" },
+        { "label": "Emergency Care", "href": "#" },
+        { "label": "Crowns & Bridges", "href": "#" },
+        { "label": "Dental Cleaning", "href": "#" },
+        { "label": "Restorative Implants", "href": "#" }
+      ]
+    },
+    {
       "title": "Company",
       "links": [
         { "label": "About Us", "href": "#" },
-        { "label": "Partner", "href": "#" },
-        { "label": "Story", "href": "#" },
-        { "label": "Case Study", "href": "#" },
-        { "label": "Customer Support", "href": "#" }
+        { "label": "Our Doctors", "href": "#doctor" },
+        { "label": "Contact", "href": "#contact" }
       ]
     },
     {
-      "title": "Product",
+      "title": "Support",
       "links": [
-        { "label": "Get help", "href": "#" },
-        { "label": "FAQ", "href": "#" },
-        { "label": "Blog", "href": "#" },
-        { "label": "Newcomers", "href": "#" }
+        { "label": "FAQ", "href": "#faq" },
+        { "label": "Book Appointment", "href": "#contact" },
+        { "label": "Find Location", "href": "#" }
       ]
     },
     {
-      "title": "Learning",
+      "title": "Legal",
       "links": [
-        { "label": "Legal", "href": "#" },
-        { "label": "Privacy", "href": "#" },
-        { "label": "Terms", "href": "#" },
-        { "label": "Communities", "href": "#" }
-      ]
-    },
-    {
-      "title": "Resources",
-      "links": [
-        { "label": "Tutorials", "href": "#" },
-        { "label": "Editorials", "href": "#" },
-        { "label": "Product", "href": "#" },
-        { "label": "Newsroom", "href": "#" }
+        { "label": "Privacy Policy", "href": "#" },
+        { "label": "Terms of Service", "href": "#" }
       ]
     }
   ],
-  "copyright": "\u00a9 2026 Dentu. All rights reserved.",
+  "copyright": "\u00a9 2026 Brown's Mill Dental. All rights reserved.",
   "socials": [
     { "icon": "/assets/icons/icon-facebook.svg", "alt": "Facebook", "href": "#", "width": 9, "height": 18 },
     { "icon": "/assets/icons/icon-twitter.svg", "alt": "Twitter", "href": "#", "width": 20, "height": 16 },

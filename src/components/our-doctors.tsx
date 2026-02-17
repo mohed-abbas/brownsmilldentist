@@ -30,13 +30,11 @@ export function OurDoctors() {
   const visibleCount = useVisibleCount();
 
   const maxIndex = Math.max(0, doctorsContent.doctors.length - visibleCount);
+  const clampedIndex = Math.min(currentIndex, maxIndex);
+  if (clampedIndex !== currentIndex) setCurrentIndex(clampedIndex);
   const isScrollable = maxIndex > 0;
-  const canPrev = currentIndex > 0;
-  const canNext = currentIndex < maxIndex;
-
-  useEffect(() => {
-    if (currentIndex > maxIndex) setCurrentIndex(maxIndex);
-  }, [maxIndex, currentIndex]);
+  const canPrev = clampedIndex > 0;
+  const canNext = clampedIndex < maxIndex;
 
   const prev = useCallback(() => {
     if (canPrev) setCurrentIndex((i) => i - 1);

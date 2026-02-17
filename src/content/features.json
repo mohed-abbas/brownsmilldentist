@@ -1,31 +1,31 @@
 {
-  "label": "Our Feature",
-  "headline": "Transforming Health from Routine to Exploration",
-  "description": "With our superior features, you can live your health journey stress-free and with passion",
+  "label": "What We Offer",
+  "headline": "Comprehensive Dental Services",
+  "description": "From routine checkups to advanced restorative work, we provide a full range of dental services tailored to your needs",
   "cta": {
-    "label": "Explore More",
-    "href": "#features"
+    "label": "View All Services",
+    "href": "#services"
   },
   "cards": [
     {
-      "icon": "AudioLines",
-      "title": "Online Consultation with Experts:",
-      "description": "Get immediate access to a trusted network."
+      "icon": "Sparkles",
+      "title": "Cosmetic Dentistry",
+      "description": "Enhance your smile with personalized aesthetic treatments."
     },
     {
-      "icon": "Grid2x2",
-      "title": "Online Consultation with Experts:",
-      "description": "Get immediate access to a trusted network."
+      "icon": "HeartPulse",
+      "title": "Emergency Dental Care",
+      "description": "Immediate relief and urgent treatments when you need them most."
     },
     {
-      "icon": "Activity",
-      "title": "Online Consultation with Experts:",
-      "description": "Get immediate access to a trusted network."
+      "icon": "Crown",
+      "title": "Dental Crowns & Bridges",
+      "description": "Long-lasting solutions for damaged or missing teeth."
     },
     {
-      "icon": "Command",
-      "title": "Online Consultation with Experts:",
-      "description": "Get immediate access to a trusted network."
+      "icon": "ShieldCheck",
+      "title": "Routine Dental Cleaning",
+      "description": "Preventive care to keep your smile fresh and healthy."
     }
   ]
 }

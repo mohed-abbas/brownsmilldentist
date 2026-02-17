@@ -1,37 +1,6 @@
 import type { Metadata } from "next";
-import localFont from "next/font/local";
-import { DM_Sans } from "next/font/google";
 import "./globals.css";
 import { site } from "@/content";
-
-const haffer = localFont({
-  src: [
-    {
-      path: "../../public/fonts/Haffer-TRIAL-Regular.woff2",
-      weight: "400",
-      style: "normal",
-    },
-    {
-      path: "../../public/fonts/Haffer-TRIAL-Medium.woff2",
-      weight: "500",
-      style: "normal",
-    },
-    {
-      path: "../../public/fonts/Haffer-TRIAL-SemiBold.woff2",
-      weight: "600",
-      style: "normal",
-    },
-  ],
-  variable: "--font-haffer",
-  display: "swap",
-});
-
-const dmSans = DM_Sans({
-  subsets: ["latin"],
-  weight: ["700"],
-  variable: "--font-dm-sans",
-  display: "swap",
-});
 
 export const metadata: Metadata = {
   title: site.seo.title,
@@ -44,8 +13,13 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${haffer.variable} ${dmSans.variable}`}>
-      <body className="font-[family-name:var(--font-haffer)]">{children}</body>
+    <html lang="en">
+      <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+        <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@700&display=swap" rel="stylesheet" />
+      </head>
+      <body>{children}</body>
     </html>
   );
 }

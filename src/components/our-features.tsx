@@ -1,10 +1,10 @@
 import Link from "next/link";
-import { AudioLines, Grid2x2, Activity, Command, type LucideIcon } from "lucide-react";
+import { Sparkles, HeartPulse, Crown, ShieldCheck, type LucideIcon } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { FeatureCard } from "@/components/feature-card";
 import { features as featuresContent } from "@/content";
 
-const iconMap: Record<string, LucideIcon> = { AudioLines, Grid2x2, Activity, Command };
+const iconMap: Record<string, LucideIcon> = { Sparkles, HeartPulse, Crown, ShieldCheck };
 
 export function OurFeatures() {
   return (

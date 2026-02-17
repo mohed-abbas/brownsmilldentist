@@ -1,5 +1,5 @@
 {
-  "headline": "Our Contact",
+  "headline": "Book an Appointment",
   "subheadline": "We're here to help you every step of the way",
   "form": {
     "fields": [
@@ -7,13 +7,13 @@
         "id": "contact-name",
         "label": "Name",
         "type": "text",
-        "placeholder": "E.g \"John\""
+        "placeholder": "Your Name"
       },
       {
         "id": "contact-email",
         "label": "Email Address",
         "type": "email",
-        "placeholder": "E.g \"John@gmail.com\""
+        "placeholder": "Your Email"
       },
       {
         "id": "contact-message",
@@ -28,15 +28,15 @@
   "info": [
     {
       "title": "Get In Touch",
-      "description": "Whether you have a question about our services, need help with your account, or want to provide feedback."
-    },
-    {
-      "title": "Chat With Us",
-      "description": "Our team is available to provide quick. friendly."
+      "description": "Whether you have a question about our services or want to schedule a visit, we'd love to hear from you."
     },
     {
       "title": "Call Us",
-      "description": "Need Immediate Assistance? Call us today, We're here to support your health journey."
+      "description": "(609) 893-5200"
+    },
+    {
+      "title": "Email Us",
+      "description": "brownsmillsdentalcenter@gmail.com"
     }
   ]
 }

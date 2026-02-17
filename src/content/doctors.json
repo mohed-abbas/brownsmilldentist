@@ -1,18 +1,18 @@
 {
-  "headline": "Meet Our Experts Dentist",
-  "description": "Our app and Concierge team make it easy to find the best providers that are in-network, available and near you",
+  "headline": "Meet Our Doctors",
+  "description": "Our team of experienced dental professionals is dedicated to providing gentle, expert care for you and your family",
   "doctors": [
     {
-      "name": "Dr. Handoyoni",
-      "role": "Owner",
+      "name": "Dr. Sadiq",
+      "role": "Lead Dentist",
       "image": "/assets/images/doctor-handoyoni.jpg",
-      "alt": "Dr. Handoyoni, practice owner"
+      "alt": "Dr. Sadiq, lead dentist"
     },
     {
-      "name": "Dr. Mika Israf",
-      "role": "Junior Dentist",
+      "name": "Dr. Asad",
+      "role": "Biological Dentist",
       "image": "/assets/images/doctor-mika-israf.jpg",
-      "alt": "Dr. Mika Israf, junior dentist"
+      "alt": "Dr. Asad, biological dentist"
     },
     {
       "name": "Dr. Andreas Druft",
