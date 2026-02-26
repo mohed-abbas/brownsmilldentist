@@ -3,48 +3,56 @@
   "description": "Comprehensive dental care tailored to keep your smile healthy, confident, and bright.",
   "cta": {
     "label": "View All Services",
-    "href": "#services"
+    "href": "/services"
   },
   "cards": [
     {
       "icon": "Sparkles",
       "title": "Cosmetic Dentistry",
-      "description": "Enhance the appearance of your smile with personalized aesthetic treatments designed for natural, beautiful results."
+      "description": "Enhance the appearance of your smile with personalized aesthetic treatments designed for natural, beautiful results.",
+      "slug": "cosmetic-dentistry"
     },
     {
       "icon": "HeartPulse",
       "title": "Emergency Dental Care",
-      "description": "Fast, compassionate care when you need it most — relief from pain and urgent dental issues."
+      "description": "Fast, compassionate care when you need it most — relief from pain and urgent dental issues.",
+      "slug": "emergency-dental-care"
     },
     {
       "icon": "Crown",
       "title": "Dental Crowns",
-      "description": "Restore strength, function, and appearance with custom crowns crafted for durability and comfort."
+      "description": "Restore strength, function, and appearance with custom crowns crafted for durability and comfort.",
+      "slug": "dental-crowns-and-bridges"
     },
     {
       "icon": "ShieldCheck",
       "title": "Professional Dental Cleaning",
-      "description": "Maintain optimal oral health with thorough cleanings that leave your smile fresh and polished."
+      "description": "Maintain optimal oral health with thorough cleanings that leave your smile fresh and polished.",
+      "slug": "routine-dental-cleaning"
     },
     {
       "icon": "Smile",
       "title": "Dentures",
-      "description": "Comfortable, natural-looking removable solutions to replace missing teeth and restore confidence."
+      "description": "Comfortable, natural-looking removable solutions to replace missing teeth and restore confidence.",
+      "slug": "dentures-and-prosthetics"
     },
     {
       "icon": "Syringe",
       "title": "Root Canal Therapy",
-      "description": "Save damaged teeth and eliminate pain with precise, gentle root canal treatment."
+      "description": "Save damaged teeth and eliminate pain with precise, gentle root canal treatment.",
+      "slug": "root-canal-therapy"
     },
     {
       "icon": "Wrench",
       "title": "Dental Implants",
-      "description": "Permanent, stable tooth replacements that look, feel, and function like natural teeth."
+      "description": "Permanent, stable tooth replacements that look, feel, and function like natural teeth.",
+      "slug": "restorative-implants"
     },
     {
       "icon": "Pill",
       "title": "Removable Prosthetics",
-      "description": "Custom removable appliances designed for comfort, function, and a confident smile."
+      "description": "Custom removable appliances designed for comfort, function, and a confident smile.",
+      "slug": "dentures-and-prosthetics"
     }
   ]
 }

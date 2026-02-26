@@ -54,6 +54,7 @@ export interface FeatureCard {
   icon: string;
   title: string;
   description: string;
+  slug: string;
 }
 
 export interface FeaturesContent {
@@ -168,4 +169,47 @@ export interface TestimonialsContent {
   headline: string;
   description: string;
   testimonials: Testimonial[];
+}
+
+export interface ServiceFaq {
+  question: string;
+  answer: string;
+}
+
+export interface ServiceDetail {
+  id: string;
+  icon: string;
+  title: string;
+  headline: string;
+  intro: string[];
+  overview: {
+    heading: string;
+    body: string;
+  };
+  concerns: string[];
+  process: string[];
+  benefits: string[];
+  faq: ServiceFaq[];
+}
+
+export interface ServicesPageContent {
+  seo: {
+    title: string;
+    description: string;
+  };
+  hero: {
+    eyebrow: string;
+    headline: string;
+    description: string;
+  };
+  services: ServiceDetail[];
+  whyChoose: {
+    headline: string;
+    description: string;
+  };
+  cta: {
+    headline: string;
+    description: string;
+    button: LinkItem;
+  };
 }

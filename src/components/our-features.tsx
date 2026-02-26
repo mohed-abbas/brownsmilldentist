@@ -60,6 +60,7 @@ export function OurFeatures() {
             icon={iconMap[card.icon]}
             title={card.title}
             description={card.description}
+            slug={card.slug}
           />
         ))}
       </div>

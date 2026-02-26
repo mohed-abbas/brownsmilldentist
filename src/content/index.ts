@@ -9,6 +9,7 @@ import testimonialsJson from "./testimonials.json";
 import faqJson from "./faq.json";
 import contactJson from "./contact.json";
 import footerJson from "./footer.json";
+import servicesJson from "./services.json";
 
 import type {
   SiteContent,
@@ -22,6 +23,7 @@ import type {
   FaqContent,
   ContactContent,
   FooterContent,
+  ServicesPageContent,
 } from "./types";
 
 export const site = siteJson as SiteContent;
@@ -35,3 +37,4 @@ export const testimonials = testimonialsJson as TestimonialsContent;
 export const faq = faqJson as FaqContent;
 export const contact = contactJson as ContactContent;
 export const footer = footerJson as FooterContent;
+export const servicesPage = servicesJson as ServicesPageContent;

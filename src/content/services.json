@@ -1,0 +1,424 @@
+{
+  "seo": {
+    "title": "Our Services | Brown's Mill Dental Center",
+    "description": "Explore our comprehensive dental services including cosmetic dentistry, emergency care, dental crowns, dentures, root canal therapy, routine cleanings, and dental implants."
+  },
+  "hero": {
+    "eyebrow": "Our Services",
+    "headline": "Comprehensive Dental Care for Every Need",
+    "description": "From routine cleanings to advanced restorative treatments, our experienced team provides personalized care designed to keep your smile healthy, confident, and bright."
+  },
+  "services": [
+    {
+      "id": "cosmetic-dentistry",
+      "icon": "Sparkles",
+      "title": "Cosmetic Dentistry",
+      "headline": "Cosmetic Dentistry for Confident Smiles",
+      "intro": [
+        "At Browns Mills Dental, we provide personalized cosmetic dentistry solutions designed to improve the appearance, balance, and confidence of your smile using modern, patient-focused care.",
+        "Whether you want a brighter smile or correction of imperfections, our cosmetic dentist provides personalized solutions using modern techniques."
+      ],
+      "overview": {
+        "heading": "What Is Cosmetic Dentistry?",
+        "body": "Cosmetic dentistry focuses on improving the color, shape, size, alignment, and overall appearance of teeth and gums. While cosmetic procedures are elective, many also improve function and oral health."
+      },
+      "concerns": [
+        "Tooth discoloration or stains",
+        "Chipped or cracked teeth",
+        "Gaps between teeth",
+        "Uneven or misshapen teeth",
+        "Worn enamel"
+      ],
+      "process": [
+        "Initial smile consultation",
+        "Comprehensive oral examination",
+        "Customized cosmetic treatment plan",
+        "Precision dental procedures",
+        "Final smile evaluation"
+      ],
+      "benefits": [
+        "Enhanced smile aesthetics",
+        "Increased confidence",
+        "Natural-looking results",
+        "Long-lasting improvements",
+        "Improved oral hygiene motivation"
+      ],
+      "faq": [
+        {
+          "question": "What is cosmetic dentistry?",
+          "answer": "Cosmetic dentistry focuses on improving the appearance of your teeth, gums, and smile. Treatments are designed to enhance color, shape, alignment, and overall aesthetics while supporting oral health."
+        },
+        {
+          "question": "Who is a good candidate for cosmetic dentistry?",
+          "answer": "Most adults with healthy teeth and gums are good candidates for cosmetic dentistry. It is ideal for patients with stained, chipped, uneven, or gapped teeth who want to improve their smile."
+        },
+        {
+          "question": "Is cosmetic dentistry safe?",
+          "answer": "Yes, cosmetic dentistry is safe when performed by a qualified dental professional. Modern techniques and materials ensure treatments are minimally invasive and comfortable."
+        },
+        {
+          "question": "How long do cosmetic dentistry results last?",
+          "answer": "The longevity of cosmetic dentistry results depends on the treatment and oral hygiene habits. Many procedures can last several years or longer with proper care and regular dental visits."
+        },
+        {
+          "question": "Does cosmetic dentistry improve oral health?",
+          "answer": "While cosmetic dentistry focuses on appearance, many treatments also improve function, bite alignment, and encourage better oral hygiene, supporting overall dental health."
+        }
+      ]
+    },
+    {
+      "id": "emergency-dental-care",
+      "icon": "HeartPulse",
+      "title": "Emergency Dental Care",
+      "headline": "Fast, Reliable Emergency Dental Care",
+      "intro": [
+        "When dental emergencies happen, Browns Mills Dental provides prompt, compassionate care to relieve pain, treat infections, and protect your oral health.",
+        "Whether you are experiencing severe tooth pain, swelling, a broken tooth, or a dental infection, our emergency dentist focuses on prompt evaluation and effective treatment."
+      ],
+      "overview": {
+        "heading": "What Is a Dental Emergency?",
+        "body": "A dental emergency is any oral health issue that requires immediate attention to relieve pain, stop bleeding, control infection, or save a tooth. Ignoring dental emergencies can lead to more severe problems and costly treatments."
+      },
+      "concerns": [
+        "Severe or persistent toothaches",
+        "Swelling, abscesses, or signs of infection",
+        "Broken, cracked, or chipped teeth",
+        "Knocked-out teeth",
+        "Lost fillings or dental crowns",
+        "Dental trauma or injuries"
+      ],
+      "process": [
+        "Immediate evaluation of symptoms",
+        "Pain relief and infection control",
+        "Stabilization of the affected tooth or area",
+        "Treatment planning for long-term care",
+        "Follow-up recommendations"
+      ],
+      "benefits": [
+        "Rapid pain relief",
+        "Reduced risk of infection spread",
+        "Preservation of natural teeth",
+        "Prevention of further dental damage",
+        "Peace of mind during urgent situations"
+      ],
+      "faq": [
+        {
+          "question": "What is considered a dental emergency?",
+          "answer": "A dental emergency includes severe tooth pain, swelling, abscesses, knocked-out teeth, broken teeth, bleeding, or any dental issue causing significant pain or infection that requires immediate care."
+        },
+        {
+          "question": "Do you offer same-day emergency dental appointments?",
+          "answer": "Yes, Browns Mills Dental prioritizes same-day emergency dental appointments whenever possible to provide fast relief and timely treatment."
+        },
+        {
+          "question": "What should I do if I have severe tooth pain or swelling?",
+          "answer": "If you experience severe tooth pain or swelling, contact our office immediately. These symptoms may indicate an infection that requires urgent dental treatment."
+        },
+        {
+          "question": "Can an emergency dentist save a damaged tooth?",
+          "answer": "In many cases, yes. Prompt emergency dental care can often save damaged or infected teeth and prevent the need for extraction."
+        },
+        {
+          "question": "Should I go to the emergency room for a dental emergency?",
+          "answer": "Most dental emergencies are best treated by a dentist. Emergency rooms may manage pain or infection temporarily but usually cannot provide definitive dental treatment."
+        }
+      ]
+    },
+    {
+      "id": "dental-crowns-and-bridges",
+      "icon": "Crown",
+      "title": "Dental Crowns & Bridges",
+      "headline": "Restoring Smiles with Dental Crowns & Bridges",
+      "intro": [
+        "Browns Mills Dental offers custom dental crowns and bridges to restore damaged or missing teeth and help you smile with confidence again.",
+        "If you are dealing with a broken tooth, severe decay, or tooth loss, our dental restorations are designed to look natural while providing long-lasting durability."
+      ],
+      "overview": {
+        "heading": "What Are Dental Crowns and Bridges?",
+        "body": "Dental crowns are custom-made caps placed over damaged or weakened teeth to restore their shape, strength, and appearance. Dental bridges replace one or more missing teeth by anchoring artificial teeth to neighboring natural teeth or crowns. Both restorations are designed to blend seamlessly with your natural smile."
+      },
+      "concerns": [
+        "Teeth with large cavities or severe decay",
+        "Cracked, chipped, or weakened teeth",
+        "Missing one or more teeth",
+        "Teeth that have undergone root canal therapy",
+        "Difficulty chewing due to damaged teeth"
+      ],
+      "process": [
+        "Comprehensive dental examination",
+        "Tooth preparation and shaping",
+        "Digital impressions for precise fit",
+        "Custom crown or bridge fabrication",
+        "Final placement and bite adjustment"
+      ],
+      "benefits": [
+        "Restores chewing and speaking ability",
+        "Improves smile appearance",
+        "Prevents shifting of surrounding teeth",
+        "Strengthens damaged teeth",
+        "Long-lasting and durable solution"
+      ],
+      "faq": [
+        {
+          "question": "What is the difference between a dental crown and a bridge?",
+          "answer": "A dental crown covers and protects a damaged tooth, while a dental bridge replaces one or more missing teeth by anchoring to surrounding teeth."
+        },
+        {
+          "question": "How long do dental crowns and bridges last?",
+          "answer": "With proper oral hygiene and regular dental visits, crowns and bridges can last 10-15 years or longer."
+        },
+        {
+          "question": "Are dental crowns and bridges natural-looking?",
+          "answer": "Yes, crowns and bridges are custom-designed to match the color, shape, and size of your natural teeth for a seamless appearance."
+        },
+        {
+          "question": "Does getting a crown or bridge hurt?",
+          "answer": "The procedure is typically comfortable. Local anesthesia is used to ensure minimal discomfort during treatment."
+        },
+        {
+          "question": "How do I care for dental crowns and bridges?",
+          "answer": "Maintain good oral hygiene by brushing, flossing daily, and visiting your dentist regularly for checkups and cleanings."
+        }
+      ]
+    },
+    {
+      "id": "dentures-and-prosthetics",
+      "icon": "Smile",
+      "title": "Dentures & Prosthetics",
+      "headline": "Comfortable Dentures & Dental Prosthetics",
+      "intro": [
+        "Browns Mills Dental provides custom dentures and dental prosthetics to restore missing teeth, improve function, and help you smile with confidence.",
+        "Our dental team designs dentures and prosthetics that look natural, fit comfortably, and support proper chewing, speaking, and facial structure."
+      ],
+      "overview": {
+        "heading": "What Are Dentures and Dental Prosthetics?",
+        "body": "Dentures are removable dental appliances used to replace missing teeth and surrounding tissues. Dental prosthetics include custom-made replacements designed to restore both appearance and oral function. Modern dentures are crafted with advanced materials to provide a natural look and improved stability."
+      },
+      "concerns": [
+        "Full dentures for complete tooth loss",
+        "Partial dentures for multiple missing teeth",
+        "Custom dental prosthetics",
+        "Implant-supported denture options"
+      ],
+      "process": [
+        "Comprehensive oral evaluation",
+        "Digital impressions and measurements",
+        "Custom denture or prosthetic design",
+        "Fitting and comfort adjustments",
+        "Ongoing care and maintenance guidance"
+      ],
+      "benefits": [
+        "Restores ability to chew and speak clearly",
+        "Enhances facial appearance and support",
+        "Improves confidence and comfort",
+        "Affordable tooth replacement solution",
+        "Custom-fit for natural results"
+      ],
+      "faq": [
+        {
+          "question": "Are dentures comfortable to wear?",
+          "answer": "Modern dentures are designed for comfort and stability. Some adjustment time is normal, but most patients adapt quickly with proper fitting."
+        },
+        {
+          "question": "How long do dentures last?",
+          "answer": "With proper care and regular dental visits, dentures can last several years. Periodic adjustments or replacements may be needed over time."
+        },
+        {
+          "question": "Can I eat normally with dentures?",
+          "answer": "Yes, dentures restore chewing ability. Starting with softer foods helps during the adjustment period before returning to a normal diet."
+        },
+        {
+          "question": "Do dentures look natural?",
+          "answer": "Yes, dentures are custom-designed to match your natural facial structure and smile for a realistic appearance."
+        },
+        {
+          "question": "How do I care for my dentures?",
+          "answer": "Dentures should be cleaned daily and stored properly when not in use. Regular dental checkups help maintain fit and comfort."
+        }
+      ]
+    },
+    {
+      "id": "root-canal-therapy",
+      "icon": "Syringe",
+      "title": "Root Canal Therapy",
+      "headline": "Gentle Root Canal Therapy for Pain Relief",
+      "intro": [
+        "Browns Mills Dental provides comfortable root canal therapy to relieve tooth pain, eliminate infection, and help save your natural tooth.",
+        "If you are experiencing severe tooth pain, sensitivity, or swelling, prompt root canal therapy can restore your comfort and protect your long-term oral health."
+      ],
+      "overview": {
+        "heading": "What Is Root Canal Therapy?",
+        "body": "Root canal therapy is a dental procedure that removes infected or inflamed pulp from inside the tooth. The inner canals are cleaned, disinfected, and sealed to prevent future infection while preserving the structure of the natural tooth. Modern techniques make root canal treatment safe, effective, and comfortable."
+      },
+      "concerns": [
+        "Persistent or severe tooth pain",
+        "Sensitivity to hot or cold temperatures",
+        "Swelling or tenderness in the gums",
+        "Darkening or discoloration of a tooth",
+        "Pain when chewing or biting"
+      ],
+      "process": [
+        "Comprehensive dental examination and imaging",
+        "Local anesthesia for comfort",
+        "Removal of infected tooth pulp",
+        "Cleaning and sealing of the root canals",
+        "Final restoration, often with a dental crown"
+      ],
+      "benefits": [
+        "Relieves tooth pain and discomfort",
+        "Saves your natural tooth",
+        "Prevents spread of infection",
+        "Restores normal chewing function",
+        "Protects overall oral health"
+      ],
+      "faq": [
+        {
+          "question": "Is root canal therapy painful?",
+          "answer": "Modern root canal therapy is designed to be comfortable. Local anesthesia helps ensure minimal discomfort during the procedure."
+        },
+        {
+          "question": "How long does a root canal procedure take?",
+          "answer": "Most root canal treatments are completed in one or two visits, depending on the complexity of the infection."
+        },
+        {
+          "question": "What happens if I delay root canal treatment?",
+          "answer": "Delaying treatment can allow the infection to worsen, potentially leading to severe pain, abscess formation, or tooth loss."
+        },
+        {
+          "question": "Will I need a crown after a root canal?",
+          "answer": "In many cases, a dental crown is recommended after root canal therapy to protect and strengthen the treated tooth."
+        },
+        {
+          "question": "How successful is root canal therapy?",
+          "answer": "Root canal therapy has a high success rate and can help preserve a natural tooth for many years with proper care."
+        }
+      ]
+    },
+    {
+      "id": "routine-dental-cleaning",
+      "icon": "ShieldCheck",
+      "title": "Routine Dental Cleaning",
+      "headline": "Routine Dental Cleanings for a Healthy Smile",
+      "intro": [
+        "Browns Mills Dental provides professional routine dental cleanings to help prevent cavities, protect gums, and maintain a healthy, confident smile.",
+        "Routine cleanings play a key role in preventing tooth decay, gum disease, and other oral health issues. Our dental team focuses on gentle, detailed care to help patients maintain long-term oral health."
+      ],
+      "overview": {
+        "heading": "What Is a Routine Dental Cleaning?",
+        "body": "A routine dental cleaning is a professional preventive treatment that removes plaque, tartar, and bacteria from the teeth and along the gumline. Cleanings help protect against cavities, gingivitis, and periodontal disease. Professional dental cleanings are recommended regularly to support overall oral and systemic health."
+      },
+      "concerns": [
+        "Prevent cavities and tooth decay",
+        "Reduce the risk of gum disease",
+        "Remove plaque and tartar buildup",
+        "Freshen breath",
+        "Support overall health"
+      ],
+      "process": [
+        "Comprehensive oral examination",
+        "Removal of plaque and tartar",
+        "Gentle polishing of teeth",
+        "Gum health evaluation",
+        "Personalized oral hygiene recommendations"
+      ],
+      "benefits": [
+        "Helps prevent serious dental problems",
+        "Keeps teeth and gums healthy",
+        "Improves smile appearance",
+        "Detects issues early",
+        "Supports long-term oral wellness"
+      ],
+      "faq": [
+        {
+          "question": "How often should I get a dental cleaning?",
+          "answer": "Most patients should have a dental cleaning every six months. Some patients may need more frequent cleanings based on their oral health."
+        },
+        {
+          "question": "Are routine dental cleanings painful?",
+          "answer": "Dental cleanings are generally comfortable. Some patients may experience mild sensitivity, but the procedure is gentle and well-tolerated."
+        },
+        {
+          "question": "Can dental cleanings prevent gum disease?",
+          "answer": "Yes, routine dental cleanings remove plaque and tartar that cause gum disease, helping to prevent gingivitis and periodontal issues."
+        },
+        {
+          "question": "Do dental cleanings whiten teeth?",
+          "answer": "Cleanings remove surface stains, making teeth appear brighter. For deeper whitening, cosmetic treatments may be recommended."
+        },
+        {
+          "question": "Are dental cleanings necessary if I brush and floss?",
+          "answer": "Yes. Even with good oral hygiene, plaque and tartar can build up in hard-to-reach areas that require professional cleaning."
+        }
+      ]
+    },
+    {
+      "id": "restorative-implants",
+      "icon": "Wrench",
+      "title": "Dental Implants",
+      "headline": "Permanent Tooth Replacement with Dental Implants",
+      "intro": [
+        "Browns Mills Dental offers restorative dental implants to replace missing teeth with strong, natural-looking, long-lasting solutions.",
+        "If you are missing one or more teeth, dental implants can restore your ability to eat, speak, and smile with confidence. Our team focuses on precision, comfort, and results that look and feel natural."
+      ],
+      "overview": {
+        "heading": "What Are Restorative Dental Implants?",
+        "body": "Dental implants are small titanium posts surgically placed into the jawbone to act as artificial tooth roots. Once healed, implants support crowns, bridges, or dentures to replace missing teeth securely. Because implants fuse with the jawbone, they provide exceptional stability and help preserve bone structure."
+      },
+      "concerns": [
+        "Are missing one or more teeth",
+        "Have healthy gums",
+        "Have adequate jawbone density",
+        "Are in good overall health",
+        "Want a permanent tooth replacement solution"
+      ],
+      "process": [
+        "Comprehensive consultation and imaging",
+        "Personalized treatment planning",
+        "Implant placement procedure",
+        "Healing and bone integration",
+        "Placement of the final restoration"
+      ],
+      "benefits": [
+        "Permanent and stable tooth replacement",
+        "Natural appearance and function",
+        "Preserves jawbone and facial structure",
+        "Improves chewing and speech",
+        "Long-lasting results"
+      ],
+      "faq": [
+        {
+          "question": "How long do dental implants last?",
+          "answer": "With proper care and regular dental visits, dental implants can last a lifetime."
+        },
+        {
+          "question": "Is the dental implant procedure painful?",
+          "answer": "The procedure is typically well-tolerated. Local anesthesia is used to ensure comfort during implant placement."
+        },
+        {
+          "question": "How long does the dental implant process take?",
+          "answer": "The full process can take several months, allowing time for healing and integration before the final restoration is placed."
+        },
+        {
+          "question": "Do dental implants look natural?",
+          "answer": "Yes, dental implants are designed to look, feel, and function like natural teeth."
+        },
+        {
+          "question": "Are dental implants better than dentures?",
+          "answer": "Dental implants provide greater stability, comfort, and durability compared to traditional dentures, making them a preferred long-term solution for many patients."
+        }
+      ]
+    }
+  ],
+  "whyChoose": {
+    "headline": "Why Choose Brown's Mill Dental?",
+    "description": "Our experienced team combines advanced technology with compassionate care to deliver exceptional dental services. From your first visit, you'll experience personalized treatment plans designed around your unique needs."
+  },
+  "cta": {
+    "headline": "Ready to Get Started?",
+    "description": "Schedule your appointment today and take the first step toward a healthier, more confident smile.",
+    "button": {
+      "label": "Book Appointment",
+      "href": "/#contact"
+    }
+  }
+}
