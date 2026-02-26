@@ -5,6 +5,7 @@ import partnersJson from "./partners.json";
 import featuresJson from "./features.json";
 import moreFeaturesJson from "./more-features.json";
 import doctorsJson from "./doctors.json";
+import testimonialsJson from "./testimonials.json";
 import faqJson from "./faq.json";
 import contactJson from "./contact.json";
 import footerJson from "./footer.json";
@@ -17,6 +18,7 @@ import type {
   FeaturesContent,
   MoreFeaturesContent,
   DoctorsContent,
+  TestimonialsContent,
   FaqContent,
   ContactContent,
   FooterContent,
@@ -29,6 +31,7 @@ export const partners = partnersJson as PartnersContent;
 export const features = featuresJson as FeaturesContent;
 export const moreFeatures = moreFeaturesJson as MoreFeaturesContent;
 export const doctors = doctorsJson as DoctorsContent;
+export const testimonials = testimonialsJson as TestimonialsContent;
 export const faq = faqJson as FaqContent;
 export const contact = contactJson as ContactContent;
 export const footer = footerJson as FooterContent;

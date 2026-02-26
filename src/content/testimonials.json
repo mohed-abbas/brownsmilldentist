@@ -1,0 +1,19 @@
+{
+  "eyebrow": "Testimonials",
+  "headline": "Words From Our Patients",
+  "description": "Hear from the families and patients who trust us with their smiles.",
+  "testimonials": [
+    {
+      "quote": "Dr. Asad is an expert at amalgam removal without exposing the patient to mercury during removal as well as in ozone treatments. Various biological dentistry options offered. Initially I was referred to him by a friend for this reason.",
+      "rating": 5
+    },
+    {
+      "quote": "My family and I have been going here for years and I wouldn't think to go to another dentist. Friendliest staff that are always accommodating and understanding.",
+      "rating": 5
+    },
+    {
+      "quote": "Possibly one of the best places to get your work done. Everyone was so nice and reliable! You can tell they are customer-first!",
+      "rating": 5
+    }
+  ]
+}

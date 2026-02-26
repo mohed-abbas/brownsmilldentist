@@ -4,6 +4,7 @@ import { PartnersBar } from "@/components/partners-bar";
 import { OurFeatures } from "@/components/our-features";
 import { MoreFeatures } from "@/components/more-features";
 import { OurDoctors } from "@/components/our-doctors";
+import { Testimonials } from "@/components/testimonials";
 import { AdvanceCare } from "@/components/advance-care";
 import { ContactSection } from "@/components/contact-section";
 import { Footer } from "@/components/footer";
@@ -25,6 +26,9 @@ export default function Home() {
         </div>
         <div className="mt-[var(--section-gap-mobile)] md:mt-[var(--section-gap-tablet)] xl:mt-[var(--section-gap)]">
           <OurDoctors />
+        </div>
+        <div className="mt-[var(--section-gap-mobile)] md:mt-[var(--section-gap-tablet)] xl:mt-[var(--section-gap)]">
+          <Testimonials />
         </div>
         <div className="mt-[var(--section-gap-mobile)] md:mt-[var(--section-gap-tablet)] xl:mt-[var(--section-gap)]">
           <AdvanceCare />

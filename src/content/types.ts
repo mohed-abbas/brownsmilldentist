@@ -154,3 +154,18 @@ export interface FooterContent {
   copyright: string;
   socials: SocialLink[];
 }
+
+export interface Testimonial {
+  quote: string;
+  author?: string;
+  role?: string;
+  image?: string;
+  rating?: number;
+}
+
+export interface TestimonialsContent {
+  eyebrow: string;
+  headline: string;
+  description: string;
+  testimonials: Testimonial[];
+}
