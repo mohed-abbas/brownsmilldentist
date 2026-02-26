@@ -89,6 +89,7 @@ export interface Doctor {
   role: string;
   image: string;
   alt: string;
+  bio?: string;
 }
 
 export interface DoctorsContent {

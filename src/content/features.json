@@ -1,7 +1,6 @@
 {
-  "label": "What We Offer",
-  "headline": "Comprehensive Dental Services",
-  "description": "From routine checkups to advanced restorative work, we provide a full range of dental services tailored to your needs",
+  "headline": "Our Services",
+  "description": "Comprehensive dental care tailored to keep your smile healthy, confident, and bright.",
   "cta": {
     "label": "View All Services",
     "href": "#services"
@@ -10,22 +9,42 @@
     {
       "icon": "Sparkles",
       "title": "Cosmetic Dentistry",
-      "description": "Enhance your smile with personalized aesthetic treatments."
+      "description": "Enhance the appearance of your smile with personalized aesthetic treatments designed for natural, beautiful results."
     },
     {
       "icon": "HeartPulse",
       "title": "Emergency Dental Care",
-      "description": "Immediate relief and urgent treatments when you need them most."
+      "description": "Fast, compassionate care when you need it most — relief from pain and urgent dental issues."
     },
     {
       "icon": "Crown",
-      "title": "Dental Crowns & Bridges",
-      "description": "Long-lasting solutions for damaged or missing teeth."
+      "title": "Dental Crowns",
+      "description": "Restore strength, function, and appearance with custom crowns crafted for durability and comfort."
     },
     {
       "icon": "ShieldCheck",
-      "title": "Routine Dental Cleaning",
-      "description": "Preventive care to keep your smile fresh and healthy."
+      "title": "Professional Dental Cleaning",
+      "description": "Maintain optimal oral health with thorough cleanings that leave your smile fresh and polished."
+    },
+    {
+      "icon": "Smile",
+      "title": "Dentures",
+      "description": "Comfortable, natural-looking removable solutions to replace missing teeth and restore confidence."
+    },
+    {
+      "icon": "Syringe",
+      "title": "Root Canal Therapy",
+      "description": "Save damaged teeth and eliminate pain with precise, gentle root canal treatment."
+    },
+    {
+      "icon": "Wrench",
+      "title": "Dental Implants",
+      "description": "Permanent, stable tooth replacements that look, feel, and function like natural teeth."
+    },
+    {
+      "icon": "Pill",
+      "title": "Removable Prosthetics",
+      "description": "Custom removable appliances designed for comfort, function, and a confident smile."
     }
   ]
 }

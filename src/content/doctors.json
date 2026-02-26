@@ -3,22 +3,18 @@
   "description": "Our team of experienced dental professionals is dedicated to providing gentle, expert care for you and your family",
   "doctors": [
     {
-      "name": "Dr. Sadiq",
-      "role": "Lead Dentist",
+      "name": "Dr. Taee, DMD, MSD",
+      "role": "Orthodontic Specialist",
       "image": "/assets/images/doctor-handoyoni.jpg",
-      "alt": "Dr. Sadiq, lead dentist"
+      "alt": "Dr. Taee, orthodontic specialist",
+      "bio": "Dr. Taee, DMD, MSD is an experienced orthodontic specialist known for taking a comprehensive approach to smile care that goes beyond straightening teeth. With a foundation in general dentistry and advanced training in orthodontics, dentofacial orthopedics, and dental sleep medicine, he focuses on improving oral health, facial balance, jaw alignment, and airway function. A top Invisalign provider since 2017, he stays at the forefront of modern techniques in dentofacial esthetics and temporomandibular joint health."
     },
     {
-      "name": "Dr. Asad",
-      "role": "Biological Dentist",
+      "name": "Dr. Asad Sadiq, DMD",
+      "role": "General Dentist",
       "image": "/assets/images/doctor-mika-israf.jpg",
-      "alt": "Dr. Asad, biological dentist"
-    },
-    {
-      "name": "Dr. Andreas Druft",
-      "role": "Senior Dentist",
-      "image": "/assets/images/doctor-andreas-druft.jpg",
-      "alt": "Dr. Andreas Druft, senior dentist"
+      "alt": "Dr. Asad Sadiq, general dentist",
+      "bio": "Dr. Asad Sadiq, DMD is a highly experienced general dentist with more than 25 years of clinical practice, known for his commitment to comprehensive, patient-centered care. He earned his Doctor of Dental Medicine degree from the University of Medicine and Dentistry of New Jersey (UMDNJ). Dr. Sadiq has pursued advanced training in implant technology at New York University College of Dentistry, allowing him to offer modern solutions for tooth replacement and smile restoration."
     }
   ]
 }
