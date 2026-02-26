@@ -86,6 +86,7 @@ export interface MoreFeaturesContent {
 
 export interface Doctor {
   name: string;
+  qualifications?: string;
   role: string;
   image: string;
   alt: string;
