@@ -133,9 +133,9 @@
   --teal-100: oklch(0.92 0.025 173);
   --teal-50: oklch(0.97 0.012 173);
 
-  /* Brand: Text */
-  --text-primary: oklch(0.17 0 0);
-  --text-secondary: oklch(0.17 0 0 / 70%);
+  /* Brand: Text — #1F1F1F */
+  --text-primary: oklch(0.239 0 0);
+  --text-secondary: oklch(0.239 0 0 / 70%);
   --text-on-dark: oklch(1 0 0);
   --text-on-dark-muted: oklch(1 0 0 / 70%);
 
@@ -271,6 +271,9 @@
   body {
     @apply bg-background text-foreground;
     font-family: var(--font-haffer);
+    font-weight: 400;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
   }
 }
 
@@ -311,7 +314,7 @@
     font-family: var(--font-haffer);
     font-size: var(--text-heading-md);
     line-height: var(--text-heading-md-lh);
-    letter-spacing: var(--text-heading-md-ls);
+    /* letter-spacing: var(--text-heading-md-ls); */
     font-weight: var(--text-heading-md-weight);
   }
 
@@ -327,7 +330,7 @@
     font-family: var(--font-haffer);
     font-size: var(--text-heading-sm);
     line-height: var(--text-heading-sm-lh);
-    letter-spacing: var(--text-heading-sm-ls);
+    /* letter-spacing: var(--text-heading-sm-ls); */
     font-weight: var(--text-heading-sm-weight);
   }
 
@@ -335,7 +338,7 @@
     font-family: var(--font-haffer);
     font-size: var(--text-body-lg);
     line-height: var(--text-body-lg-lh);
-    letter-spacing: var(--text-body-lg-ls);
+    /* letter-spacing: var(--text-body-lg-ls); */
     font-weight: var(--text-body-lg-weight);
   }
 
@@ -343,7 +346,7 @@
     font-family: var(--font-haffer);
     font-size: var(--text-body-md);
     line-height: var(--text-body-md-lh);
-    letter-spacing: var(--text-body-md-ls);
+    /* letter-spacing: var(--text-body-md-ls); */
     font-weight: var(--text-body-md-weight);
   }
 
@@ -420,7 +423,7 @@
 @keyframes fadeUp {
   from {
     opacity: 0;
-    transform: translateY(24px);
+    transform: translateY(40px);
   }
   to {
     opacity: 1;
@@ -436,7 +439,7 @@
 @keyframes scaleIn {
   from {
     opacity: 0;
-    transform: scale(0.96);
+    transform: scale(0.92);
   }
   to {
     opacity: 1;
@@ -447,7 +450,7 @@
 @keyframes slideInLeft {
   from {
     opacity: 0;
-    transform: translateX(-24px);
+    transform: translateX(-40px);
   }
   to {
     opacity: 1;
@@ -458,7 +461,7 @@
 @keyframes slideInRight {
   from {
     opacity: 0;
-    transform: translateX(24px);
+    transform: translateX(40px);
   }
   to {
     opacity: 1;
@@ -468,23 +471,23 @@
 
 /* Reveal animation classes — used for on-load (hero) and scroll-triggered reveals */
 .reveal-fade-up {
-  animation: fadeUp var(--reveal-duration, 650ms) cubic-bezier(0.16, 1, 0.3, 1) var(--reveal-delay, 0ms) both;
+  animation: fadeUp var(--reveal-duration, 800ms) cubic-bezier(0.16, 1, 0.3, 1) var(--reveal-delay, 0ms) both;
 }
 
 .reveal-fade-in {
-  animation: fadeIn var(--reveal-duration, 600ms) cubic-bezier(0.16, 1, 0.3, 1) var(--reveal-delay, 0ms) both;
+  animation: fadeIn var(--reveal-duration, 750ms) cubic-bezier(0.16, 1, 0.3, 1) var(--reveal-delay, 0ms) both;
 }
 
 .reveal-scale-in {
-  animation: scaleIn var(--reveal-duration, 750ms) cubic-bezier(0.16, 1, 0.3, 1) var(--reveal-delay, 0ms) both;
+  animation: scaleIn var(--reveal-duration, 900ms) cubic-bezier(0.16, 1, 0.3, 1) var(--reveal-delay, 0ms) both;
 }
 
 .reveal-slide-left {
-  animation: slideInLeft var(--reveal-duration, 650ms) cubic-bezier(0.16, 1, 0.3, 1) var(--reveal-delay, 0ms) both;
+  animation: slideInLeft var(--reveal-duration, 800ms) cubic-bezier(0.16, 1, 0.3, 1) var(--reveal-delay, 0ms) both;
 }
 
 .reveal-slide-right {
-  animation: slideInRight var(--reveal-duration, 650ms) cubic-bezier(0.16, 1, 0.3, 1) var(--reveal-delay, 0ms) both;
+  animation: slideInRight var(--reveal-duration, 800ms) cubic-bezier(0.16, 1, 0.3, 1) var(--reveal-delay, 0ms) both;
 }
 
 /* Reduced motion */

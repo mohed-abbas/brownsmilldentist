@@ -57,7 +57,7 @@ export function ServicesTabs({ services }: ServicesTabsProps) {
   return (
     <div id="service-detail" className="scroll-mt-8">
       {/* ─── Sticky Pill Tab Navigation ─── */}
-      <div className="sticky top-0 z-20 bg-white pt-1 pb-3">
+      <div className="sticky top-0 z-20 pt-1 pb-3">
         <div
           role="tablist"
           aria-label="Service categories"
@@ -103,7 +103,7 @@ export function ServicesTabs({ services }: ServicesTabsProps) {
         className="pt-10 md:pt-14 xl:pt-16"
       >
         {/* ── Service Intro Banner ── */}
-        <ScrollReveal animation="fade-up" duration={550}>
+        <ScrollReveal animation="fade-up" duration={750}>
           <div className="rounded-[var(--radius-container)] bg-teal-50 px-6 py-10 sm:px-10 sm:py-12 xl:px-14 xl:py-14">
             <div className="flex flex-col gap-6 xl:flex-row xl:items-start xl:gap-10">
               <div className="flex size-16 shrink-0 items-center justify-center rounded-[var(--radius-button)] bg-teal-500 xl:size-20">
@@ -142,7 +142,7 @@ export function ServicesTabs({ services }: ServicesTabsProps) {
 
           {/* Concerns card */}
           {active.concerns.length > 0 && (
-            <ScrollReveal animation="slide-right" delay={100} className="w-full xl:w-[380px] xl:shrink-0">
+            <ScrollReveal animation="slide-right" delay={200} className="w-full xl:w-[380px] xl:shrink-0">
               <div className="rounded-[var(--radius-card)] bg-white p-6 shadow-card sm:p-8">
                 <h4 className="text-heading-sm text-text-primary mb-5">
                   Common Concerns
@@ -215,7 +215,7 @@ export function ServicesTabs({ services }: ServicesTabsProps) {
           </ScrollReveal>
           <div className="mt-8 grid grid-cols-1 gap-4 sm:grid-cols-2 xl:grid-cols-3">
             {active.benefits.map((benefit, i) => (
-              <ScrollReveal key={i} animation="fade-up" delay={i * 60} duration={550}>
+              <ScrollReveal key={i} animation="fade-up" delay={i * 100}>
                 <div className="flex items-start gap-4 rounded-[var(--radius-card)] bg-white p-5 shadow-card transition-all duration-[var(--duration-normal)] ease-[var(--ease-default)] hover:shadow-card-hover hover:-translate-y-0.5 sm:p-6">
                   <span className="flex size-9 shrink-0 items-center justify-center rounded-full bg-teal-500/10">
                     <Check

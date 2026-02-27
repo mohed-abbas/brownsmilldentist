@@ -1,4 +1,6 @@
-import { ScrollReveal } from "@/components/scroll-reveal";
+"use client";
+
+import { useEffect, useRef } from "react";
 import { partners as partnersContent } from "@/content";
 
 function MarketlyIcon() {
@@ -13,32 +15,54 @@ function MarketlyIcon() {
 }
 
 export function PartnersBar() {
+  const ref = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    const el = ref.current;
+    if (!el) return;
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          el.style.opacity = "0.4";
+          observer.unobserve(el);
+        }
+      },
+      { threshold: 0.15, rootMargin: "0px 0px 40px 0px" },
+    );
+    observer.observe(el);
+    return () => observer.disconnect();
+  }, []);
+
   return (
-    <ScrollReveal animation="fade-in" duration={800}>
-      <div
-        role="img"
-        aria-label="Our partners"
-        className="flex flex-wrap items-center justify-center gap-x-8 gap-y-6 md:gap-x-12 xl:gap-x-[86px] partner-blend"
-      >
-        {partnersContent.partners.map((partner) => (
-          <div key={partner.name} className="inline-flex items-center gap-3">
-            {partner.name === "Marketly" ? (
-              <MarketlyIcon />
-            ) : partner.icon ? (
-              /* eslint-disable-next-line @next/next/no-img-element */
-              <img
-                src={partner.icon}
-                alt=""
-                className="h-[40px] w-auto"
-                aria-hidden="true"
-              />
-            ) : null}
-            <span className="text-heading-lg text-[#170F49]">
-              {partner.name}
-            </span>
-          </div>
-        ))}
-      </div>
-    </ScrollReveal>
+    <div
+      ref={ref}
+      role="img"
+      aria-label="Our partners"
+      className="flex flex-wrap items-center justify-center gap-x-8 gap-y-6 md:gap-x-12 xl:gap-x-[86px]"
+      style={{
+        opacity: 0,
+        mixBlendMode: "luminosity",
+        transition: "opacity 750ms cubic-bezier(0.16, 1, 0.3, 1)",
+      }}
+    >
+      {partnersContent.partners.map((partner) => (
+        <div key={partner.name} className="inline-flex items-center gap-3">
+          {partner.name === "Marketly" ? (
+            <MarketlyIcon />
+          ) : partner.icon ? (
+            /* eslint-disable-next-line @next/next/no-img-element */
+            <img
+              src={partner.icon}
+              alt=""
+              className="h-[40px] w-auto"
+              aria-hidden="true"
+            />
+          ) : null}
+          <span className="text-heading-lg text-[#170F49]">
+            {partner.name}
+          </span>
+        </div>
+      ))}
+    </div>
   );
 }

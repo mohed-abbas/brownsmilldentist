@@ -20,7 +20,7 @@ export function MoreFeatures() {
 
           {/* Sub-row: small image + text/CTA */}
           <div className="mt-8 flex flex-col gap-6 sm:flex-row sm:gap-[74px] xl:mt-[82px]">
-            <ScrollReveal animation="scale-in" className="relative aspect-[341/254] w-full shrink-0 overflow-hidden rounded-[var(--radius-container)] sm:w-[49%] xl:w-[341px]">
+            <ScrollReveal animation="scale-in" delay={150} className="relative aspect-[341/254] w-full shrink-0 overflow-hidden rounded-[var(--radius-container)] sm:w-[49%] xl:w-[341px]">
               <Image
                 src={moreFeatures.top.images.small.src}
                 alt={moreFeatures.top.images.small.alt}
@@ -29,7 +29,7 @@ export function MoreFeatures() {
                 sizes="(max-width: 640px) 100vw, (max-width: 1280px) 49vw, 341px"
               />
             </ScrollReveal>
-            <ScrollReveal animation="fade-up" delay={120} className="flex flex-col justify-center">
+            <ScrollReveal animation="fade-up" delay={300} className="flex flex-col justify-center">
               <p className="text-body-lg text-text-secondary max-w-[277px]">
                 {moreFeatures.top.description}
               </p>
@@ -51,7 +51,7 @@ export function MoreFeatures() {
         </div>
 
         {/* Right column — large image */}
-        <ScrollReveal animation="scale-in" delay={100} className="relative aspect-[617/528] w-full overflow-hidden rounded-[var(--radius-container)] xl:w-[44.4%] xl:shrink-0">
+        <ScrollReveal animation="scale-in" delay={200} className="relative aspect-[617/528] w-full overflow-hidden rounded-[var(--radius-container)] xl:w-[44.4%] xl:shrink-0">
           <Image
             src={moreFeatures.top.images.large.src}
             alt={moreFeatures.top.images.large.alt}
@@ -76,7 +76,7 @@ export function MoreFeatures() {
         </ScrollReveal>
 
         {/* Center image */}
-        <ScrollReveal animation="scale-in" delay={100} className="relative aspect-[416/428] w-full overflow-hidden rounded-[var(--radius-container)] sm:w-1/3 xl:w-[416px] xl:shrink-0">
+        <ScrollReveal animation="scale-in" delay={200} className="relative aspect-[416/428] w-full overflow-hidden rounded-[var(--radius-container)] sm:w-1/3 xl:w-[416px] xl:shrink-0">
           <Image
             src={moreFeatures.bottom.images.center.src}
             alt={moreFeatures.bottom.images.center.alt}
@@ -87,7 +87,7 @@ export function MoreFeatures() {
         </ScrollReveal>
 
         {/* Text block */}
-        <ScrollReveal animation="fade-up" delay={200} className="flex flex-col gap-[33px] sm:w-1/3 xl:w-[484px] xl:shrink-0">
+        <ScrollReveal animation="fade-up" delay={350} className="flex flex-col gap-[33px] sm:w-1/3 xl:w-[484px] xl:shrink-0">
           <h2 className="text-heading-xl text-teal-500">
             {moreFeatures.bottom.headline}
           </h2>
