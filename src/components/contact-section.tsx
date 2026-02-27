@@ -2,6 +2,7 @@
 
 import { useState, type FormEvent } from "react";
 import { CircleCheck } from "lucide-react";
+import { ScrollReveal } from "@/components/scroll-reveal";
 import { contact } from "@/content";
 
 export function ContactSection() {
@@ -17,12 +18,12 @@ export function ContactSection() {
   return (
     <section id="contact" aria-label="Contact Us" className="flex flex-col items-center gap-10 xl:gap-[69px]">
       {/* Section Header */}
-      <div className="flex w-full max-w-[719px] flex-col items-center gap-[21px] text-center">
+      <ScrollReveal animation="fade-up" className="flex w-full max-w-[719px] flex-col items-center gap-[21px] text-center">
         <h2 className="text-display-section text-text-primary">{contact.headline}</h2>
         <p className="text-body-lg text-text-secondary">
           {contact.subheadline}
         </p>
-      </div>
+      </ScrollReveal>
 
       {/* Two-Column Layout */}
       <div className="flex w-full flex-col gap-12 xl:flex-row xl:items-start xl:justify-between xl:gap-0">

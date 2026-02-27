@@ -5,6 +5,11 @@ import { Button } from "@/components/ui/button";
 import { BadgeTag } from "@/components/badge-tag";
 import { AvatarStack } from "@/components/avatar-stack";
 import { hero } from "@/content";
+import type { CSSProperties } from "react";
+
+function d(ms: number): CSSProperties {
+  return { "--reveal-delay": `${ms}ms` } as CSSProperties;
+}
 
 export function Hero() {
   return (
@@ -18,23 +23,23 @@ export function Hero() {
       <div className="relative z-10 flex flex-col gap-10 px-6 pt-8 pb-6 sm:gap-16 sm:px-10 sm:pt-16 sm:pb-10 xl:absolute xl:left-[3.59%] xl:top-[94px] xl:w-[36.06%] xl:gap-[92px] xl:px-0 xl:pt-0 xl:pb-0">
         {/* Badges + Headline */}
         <div className="flex flex-col gap-[26px]">
-          <div className="flex gap-[7px] flex-wrap">
+          <div className="reveal-fade-up flex gap-[7px] flex-wrap" style={d(0)}>
             {hero.badges.map((badge) => (
               <BadgeTag key={badge}>{badge}</BadgeTag>
             ))}
           </div>
-          <h1 className="text-display-hero text-white">
+          <h1 className="reveal-fade-up text-display-hero text-white" style={d(120)}>
             {hero.headline}
           </h1>
         </div>
 
         {/* Subtext + CTA */}
         <div className="flex flex-col gap-[34px] max-w-[325px]">
-          <p className="text-body-lg text-white">
+          <p className="reveal-fade-up text-body-lg text-white" style={d(240)}>
             {hero.subtext}
           </p>
 
-          <div className="flex items-center gap-[30px]">
+          <div className="reveal-fade-up flex items-center gap-[30px]" style={d(360)}>
             <Button
               variant="hero"
               size="brand-default"
@@ -46,14 +51,14 @@ export function Hero() {
             <AvatarStack avatars={hero.avatars.patients} />
           </div>
 
-          <p className="text-body-lg text-white tracking-[-0.02em]">
+          <p className="reveal-fade-up text-body-lg text-white tracking-[-0.02em]" style={d(440)}>
             {hero.membersStats}
           </p>
         </div>
       </div>
 
       {/* Center Column — Hero Image (desktop: absolute, overlaps left column) */}
-      <div className="hidden xl:block xl:absolute xl:left-[33.66%] xl:top-[33px] xl:w-[40.35%] xl:h-[807px]">
+      <div className="reveal-scale-in hidden xl:block xl:absolute xl:left-[33.66%] xl:top-[33px] xl:w-[40.35%] xl:h-[807px]" style={d(200)}>
         <Image
           src={hero.images.center.src}
           alt={hero.images.center.alt}
@@ -65,7 +70,7 @@ export function Hero() {
       </div>
 
       {/* Right Column (desktop only) */}
-      <div className="hidden xl:flex xl:absolute xl:left-[77.61%] xl:top-[77px] xl:w-[20.42%] xl:h-[763px] flex-col justify-between">
+      <div className="reveal-fade-up hidden xl:flex xl:absolute xl:left-[77.61%] xl:top-[77px] xl:w-[20.42%] xl:h-[763px] flex-col justify-between" style={d(500)}>
         {/* Doctor Stats */}
         <div className="flex flex-col gap-[23px] w-full">
           <p className="text-body-md text-white tracking-[-0.02em]">
@@ -100,7 +105,7 @@ export function Hero() {
       </div>
 
       {/* Mobile/Tablet: Show center image below content */}
-      <div className="relative xl:hidden flex justify-center px-6 pb-8">
+      <div className="reveal-scale-in relative xl:hidden flex justify-center px-6 pb-8" style={d(200)}>
         <Image
           src={hero.images.center.src}
           alt={hero.images.center.alt}

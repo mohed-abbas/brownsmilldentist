@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { ScrollReveal } from "@/components/scroll-reveal";
 import { footer } from "@/content";
 
 export function Footer() {
@@ -6,6 +7,7 @@ export function Footer() {
     <footer className="gradient-footer mt-32 pt-16 pb-12 md:pt-20 md:pb-14 xl:pt-24 xl:pb-16">
       <div className="container-page">
         {/* Link columns */}
+        <ScrollReveal animation="fade-up">
         <nav
           aria-label="Footer navigation"
           className="grid grid-cols-2 gap-x-6 gap-y-10 md:grid-cols-4 md:gap-x-8 xl:gap-x-12"
@@ -30,6 +32,7 @@ export function Footer() {
             </div>
           ))}
         </nav>
+        </ScrollReveal>
 
         {/* Divider area — copyright + socials */}
         <div className="mt-16 md:mt-20 xl:mt-24 flex flex-col items-center gap-5">

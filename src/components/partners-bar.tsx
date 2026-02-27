@@ -1,3 +1,4 @@
+import { ScrollReveal } from "@/components/scroll-reveal";
 import { partners as partnersContent } from "@/content";
 
 function MarketlyIcon() {
@@ -13,29 +14,31 @@ function MarketlyIcon() {
 
 export function PartnersBar() {
   return (
-    <div
-      role="img"
-      aria-label="Our partners"
-      className="flex flex-wrap items-center justify-center gap-x-8 gap-y-6 md:gap-x-12 xl:gap-x-[86px] partner-blend"
-    >
-      {partnersContent.partners.map((partner) => (
-        <div key={partner.name} className="inline-flex items-center gap-3">
-          {partner.name === "Marketly" ? (
-            <MarketlyIcon />
-          ) : partner.icon ? (
-            /* eslint-disable-next-line @next/next/no-img-element */
-            <img
-              src={partner.icon}
-              alt=""
-              className="h-[40px] w-auto"
-              aria-hidden="true"
-            />
-          ) : null}
-          <span className="text-heading-lg text-[#170F49]">
-            {partner.name}
-          </span>
-        </div>
-      ))}
-    </div>
+    <ScrollReveal animation="fade-in" duration={800}>
+      <div
+        role="img"
+        aria-label="Our partners"
+        className="flex flex-wrap items-center justify-center gap-x-8 gap-y-6 md:gap-x-12 xl:gap-x-[86px] partner-blend"
+      >
+        {partnersContent.partners.map((partner) => (
+          <div key={partner.name} className="inline-flex items-center gap-3">
+            {partner.name === "Marketly" ? (
+              <MarketlyIcon />
+            ) : partner.icon ? (
+              /* eslint-disable-next-line @next/next/no-img-element */
+              <img
+                src={partner.icon}
+                alt=""
+                className="h-[40px] w-auto"
+                aria-hidden="true"
+              />
+            ) : null}
+            <span className="text-heading-lg text-[#170F49]">
+              {partner.name}
+            </span>
+          </div>
+        ))}
+      </div>
+    </ScrollReveal>
   );
 }

@@ -6,7 +6,7 @@ export function Navbar() {
   return (
     <nav
       aria-label="Main navigation"
-      className="gradient-hero flex h-[98px] items-center justify-between rounded-[var(--radius-container)] px-[25px]"
+      className="reveal-fade-in gradient-hero flex h-[98px] items-center justify-between rounded-[var(--radius-container)] px-[25px]"
     >
       <Link
         href="/"

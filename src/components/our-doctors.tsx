@@ -3,6 +3,7 @@
 import { useState, useCallback } from "react";
 import Image from "next/image";
 import { ArrowLeft, ArrowRight } from "lucide-react";
+import { ScrollReveal } from "@/components/scroll-reveal";
 import { doctors as doctorsContent } from "@/content";
 
 export function OurDoctors() {
@@ -25,7 +26,7 @@ export function OurDoctors() {
     <section aria-label="Our Doctors">
       <div className="flex flex-col gap-10 xl:gap-[85px]">
         {/* Header */}
-        <div className="flex items-end justify-between gap-8">
+        <ScrollReveal animation="fade-up" className="flex items-end justify-between gap-8">
           <div className="flex max-w-[515px] flex-col gap-[29px]">
             <h2 className="text-display-section text-text-primary">
               {doctorsContent.headline}
@@ -54,10 +55,10 @@ export function OurDoctors() {
               <ArrowRight className="size-5 xl:size-7" />
             </button>
           </div>
-        </div>
+        </ScrollReveal>
 
         {/* Featured Doctor Slideshow */}
-        <div className="overflow-hidden rounded-[var(--radius-container)] bg-white shadow-[0px_8px_14px_0px_rgba(0,0,0,0.07)]">
+        <ScrollReveal animation="scale-in" delay={100} className="overflow-hidden rounded-[var(--radius-container)] bg-white shadow-[0px_8px_14px_0px_rgba(0,0,0,0.07)]">
           <div className="flex flex-col xl:flex-row">
             {/* Image — cross-fade only on images */}
             <div className="relative aspect-[4/3] w-full shrink-0 sm:aspect-[3/2] xl:aspect-auto xl:w-[420px] xl:min-h-[440px]">
@@ -117,7 +118,7 @@ export function OurDoctors() {
               </div>
             </div>
           </div>
-        </div>
+        </ScrollReveal>
 
         {/* Mobile navigation arrows */}
         <div className="flex items-center justify-center gap-[11px] sm:hidden">

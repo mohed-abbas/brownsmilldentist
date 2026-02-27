@@ -1,4 +1,5 @@
 import { TestimonialCard } from "@/components/testimonial-card";
+import { ScrollReveal } from "@/components/scroll-reveal";
 import { testimonials as testimonialsContent } from "@/content";
 
 export function Testimonials() {
@@ -23,7 +24,7 @@ export function Testimonials() {
       </div>
 
       {/* Header */}
-      <div className="relative mx-auto max-w-[600px] text-center">
+      <ScrollReveal animation="fade-up" className="relative mx-auto max-w-[600px] text-center">
         <p className="text-body-sm font-medium tracking-[0.2em] uppercase text-teal-300">
           {testimonialsContent.eyebrow}
         </p>
@@ -33,17 +34,19 @@ export function Testimonials() {
         <p className="mt-5 text-body-lg text-text-on-dark-muted">
           {testimonialsContent.description}
         </p>
-      </div>
+      </ScrollReveal>
 
       {/* Staggered Cards Grid */}
       <div className="relative mt-12 grid grid-cols-1 gap-5 md:grid-cols-2 xl:mt-16 xl:grid-cols-3 xl:gap-6">
         {testimonialsContent.testimonials.map((testimonial, i) => (
-          <div
+          <ScrollReveal
             key={i}
+            animation="fade-up"
+            delay={i * 120}
             className={i === 1 ? "xl:-translate-y-4" : ""}
           >
             <TestimonialCard {...testimonial} featured={i === 0} />
-          </div>
+          </ScrollReveal>
         ))}
       </div>
     </section>

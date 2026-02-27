@@ -12,6 +12,7 @@ import {
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { FeatureCard } from "@/components/feature-card";
+import { ScrollReveal } from "@/components/scroll-reveal";
 import { features as featuresContent } from "@/content";
 
 const iconMap: Record<string, LucideIcon> = {
@@ -29,7 +30,7 @@ export function OurFeatures() {
   return (
     <section aria-label="Our Features" className="flex flex-col gap-10 md:gap-14 xl:flex-row xl:items-start xl:justify-between xl:gap-0">
       {/* Left Column — Text + CTA */}
-      <div className="flex w-full flex-col xl:sticky xl:top-10 xl:w-[614px] xl:shrink-0 xl:self-start">
+      <ScrollReveal animation="fade-up" className="flex w-full flex-col xl:sticky xl:top-10 xl:w-[614px] xl:shrink-0 xl:self-start">
         <div className="flex flex-col gap-[18px]">
           <h2 className="text-display-section text-text-primary">
             {featuresContent.headline}
@@ -50,18 +51,19 @@ export function OurFeatures() {
             <Link href={featuresContent.cta.href}>{featuresContent.cta.label}</Link>
           </Button>
         </div>
-      </div>
+      </ScrollReveal>
 
       {/* Right Column — 2-column Card Grid */}
       <div className="grid w-full grid-cols-1 gap-5 sm:grid-cols-2 sm:gap-x-5 sm:gap-y-[21px] xl:w-[700px] xl:shrink-0">
         {featuresContent.cards.map((card, i) => (
-          <FeatureCard
-            key={i}
-            icon={iconMap[card.icon]}
-            title={card.title}
-            description={card.description}
-            slug={card.slug}
-          />
+          <ScrollReveal key={i} animation="fade-up" delay={i * 80}>
+            <FeatureCard
+              icon={iconMap[card.icon]}
+              title={card.title}
+              description={card.description}
+              slug={card.slug}
+            />
+          </ScrollReveal>
         ))}
       </div>
     </section>
