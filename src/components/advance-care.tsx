@@ -12,7 +12,7 @@ import { faq } from "@/content";
 
 export function AdvanceCare() {
   return (
-    <section aria-label="Advanced Dental Care">
+    <section id="faq" aria-label="Advanced Dental Care">
       {/* Header */}
       <ScrollReveal animation="fade-up" className="mx-auto flex max-w-[719px] flex-col items-center gap-6 text-center xl:gap-9">
         <h2 className="text-display-section text-text-primary">

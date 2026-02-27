@@ -7,7 +7,7 @@ import { moreFeatures } from "@/content";
 
 export function MoreFeatures() {
   return (
-    <section aria-label="More Features">
+    <section id="about" aria-label="More Features">
       {/* === TOP ZONE === */}
       <div className="flex flex-col gap-8 xl:flex-row xl:justify-between xl:gap-0">
         {/* Left column — headline + sub-row */}
@@ -30,7 +30,7 @@ export function MoreFeatures() {
               />
             </ScrollReveal>
             <ScrollReveal animation="fade-up" delay={300} className="flex flex-col justify-center">
-              <p className="text-body-lg text-text-secondary max-w-[277px]">
+              <p className="text-body-lg text-text-secondary">
                 {moreFeatures.top.description}
               </p>
               <div className="mt-8 xl:mt-[42px]">

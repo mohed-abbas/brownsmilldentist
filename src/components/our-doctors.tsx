@@ -23,7 +23,7 @@ export function OurDoctors() {
   }, [canNext]);
 
   return (
-    <section aria-label="Our Doctors">
+    <section id="doctor" aria-label="Our Doctors">
       <div className="flex flex-col gap-10 xl:gap-[85px]">
         {/* Header */}
         <ScrollReveal animation="fade-up" className="flex items-end justify-between gap-8">

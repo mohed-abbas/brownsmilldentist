@@ -1,6 +1,6 @@
 import { Navbar } from "@/components/navbar";
 import { Hero } from "@/components/hero";
-import { PartnersBar } from "@/components/partners-bar";
+import { StatsBar } from "@/components/stats-bar";
 import { OurFeatures } from "@/components/our-features";
 import { MoreFeatures } from "@/components/more-features";
 import { OurDoctors } from "@/components/our-doctors";
@@ -16,7 +16,7 @@ export default function Home() {
         <div className="flex flex-col gap-5 xl:gap-[41px]">
           <Navbar />
           <Hero />
-          <PartnersBar />
+          <StatsBar />
         </div>
         <div className="mt-[var(--section-gap-mobile)] md:mt-[var(--section-gap-tablet)] xl:mt-[var(--section-gap)]">
           <OurFeatures />
