@@ -19,6 +19,7 @@ import {
   AccordionTrigger,
   AccordionContent,
 } from "@/components/ui/accordion";
+import { ScrollReveal } from "@/components/scroll-reveal";
 import type { ServiceDetail } from "@/content/types";
 
 const iconMap: Record<string, LucideIcon> = {
@@ -95,75 +96,80 @@ export function ServicesTabs({ services }: ServicesTabsProps) {
 
       {/* ─── Content Panel ─── */}
       <div
+        key={active.id}
         id={`panel-${active.id}`}
         role="tabpanel"
         aria-labelledby={active.id}
         className="pt-10 md:pt-14 xl:pt-16"
       >
         {/* ── Service Intro Banner ── */}
-        <div className="rounded-[var(--radius-container)] bg-teal-50 px-6 py-10 sm:px-10 sm:py-12 xl:px-14 xl:py-14">
-          <div className="flex flex-col gap-6 xl:flex-row xl:items-start xl:gap-10">
-            <div className="flex size-16 shrink-0 items-center justify-center rounded-[var(--radius-button)] bg-teal-500 xl:size-20">
-              {ActiveIcon && (
-                <ActiveIcon
-                  className="size-7 text-white xl:size-9"
-                  aria-hidden="true"
-                />
-              )}
-            </div>
-            <div className="flex flex-col gap-4 xl:gap-5">
-              <h2 className="text-heading-xl text-text-primary">
-                {active.headline}
-              </h2>
-              {active.intro.map((p, i) => (
-                <p key={i} className="text-body-lg text-text-secondary max-w-[680px]">
-                  {p}
-                </p>
-              ))}
+        <ScrollReveal animation="fade-up" duration={550}>
+          <div className="rounded-[var(--radius-container)] bg-teal-50 px-6 py-10 sm:px-10 sm:py-12 xl:px-14 xl:py-14">
+            <div className="flex flex-col gap-6 xl:flex-row xl:items-start xl:gap-10">
+              <div className="flex size-16 shrink-0 items-center justify-center rounded-[var(--radius-button)] bg-teal-500 xl:size-20">
+                {ActiveIcon && (
+                  <ActiveIcon
+                    className="size-7 text-white xl:size-9"
+                    aria-hidden="true"
+                  />
+                )}
+              </div>
+              <div className="flex flex-col gap-4 xl:gap-5">
+                <h2 className="text-heading-xl text-text-primary">
+                  {active.headline}
+                </h2>
+                {active.intro.map((p, i) => (
+                  <p key={i} className="text-body-lg text-text-secondary max-w-[680px]">
+                    {p}
+                  </p>
+                ))}
+              </div>
             </div>
           </div>
-        </div>
+        </ScrollReveal>
 
         {/* ── Overview + Concerns — Two-Column ── */}
         <div className="mt-12 md:mt-16 xl:mt-20 flex flex-col gap-8 xl:flex-row xl:gap-10">
           {/* Overview text */}
-          <div className="flex-1">
+          <ScrollReveal animation="fade-up" className="flex-1">
             <h3 className="text-heading-md text-text-primary">
               {active.overview.heading}
             </h3>
             <p className="mt-5 text-body-lg text-text-secondary leading-[1.6]">
               {active.overview.body}
             </p>
-          </div>
+          </ScrollReveal>
 
           {/* Concerns card */}
           {active.concerns.length > 0 && (
-            <div className="w-full rounded-[var(--radius-card)] bg-white p-6 shadow-card sm:p-8 xl:w-[380px] xl:shrink-0">
-              <h4 className="text-heading-sm text-text-primary mb-5">
-                Common Concerns
-              </h4>
-              <ul className="flex flex-col gap-3.5">
-                {active.concerns.map((concern, i) => (
-                  <li
-                    key={i}
-                    className="flex items-start gap-3 text-body-md text-text-secondary"
-                  >
-                    <span className="mt-1 flex size-5 shrink-0 items-center justify-center rounded-full bg-teal-500/10">
-                      <Check
-                        className="size-3 text-teal-500"
-                        aria-hidden="true"
-                      />
-                    </span>
-                    {concern}
-                  </li>
-                ))}
-              </ul>
-            </div>
+            <ScrollReveal animation="slide-right" delay={100} className="w-full xl:w-[380px] xl:shrink-0">
+              <div className="rounded-[var(--radius-card)] bg-white p-6 shadow-card sm:p-8">
+                <h4 className="text-heading-sm text-text-primary mb-5">
+                  Common Concerns
+                </h4>
+                <ul className="flex flex-col gap-3.5">
+                  {active.concerns.map((concern, i) => (
+                    <li
+                      key={i}
+                      className="flex items-start gap-3 text-body-md text-text-secondary"
+                    >
+                      <span className="mt-1 flex size-5 shrink-0 items-center justify-center rounded-full bg-teal-500/10">
+                        <Check
+                          className="size-3 text-teal-500"
+                          aria-hidden="true"
+                        />
+                      </span>
+                      {concern}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            </ScrollReveal>
           )}
         </div>
 
         {/* ── Treatment Process — Vertical Timeline ── */}
-        <div className="mt-12 md:mt-16 xl:mt-20">
+        <ScrollReveal animation="fade-up" className="mt-12 md:mt-16 xl:mt-20">
           <h3 className="text-heading-md text-text-primary">
             Treatment Process
           </h3>
@@ -200,53 +206,56 @@ export function ServicesTabs({ services }: ServicesTabsProps) {
               })}
             </ol>
           </div>
-        </div>
+        </ScrollReveal>
 
         {/* ── Benefits — Card Grid ── */}
         <div className="mt-12 md:mt-16 xl:mt-20">
-          <h3 className="text-heading-md text-text-primary">Benefits</h3>
+          <ScrollReveal animation="fade-up">
+            <h3 className="text-heading-md text-text-primary">Benefits</h3>
+          </ScrollReveal>
           <div className="mt-8 grid grid-cols-1 gap-4 sm:grid-cols-2 xl:grid-cols-3">
             {active.benefits.map((benefit, i) => (
-              <div
-                key={i}
-                className="flex items-start gap-4 rounded-[var(--radius-card)] bg-white p-5 shadow-card transition-all duration-[var(--duration-normal)] ease-[var(--ease-default)] hover:shadow-card-hover hover:-translate-y-0.5 sm:p-6"
-              >
-                <span className="flex size-9 shrink-0 items-center justify-center rounded-full bg-teal-500/10">
-                  <Check
-                    className="size-4 text-teal-500"
-                    aria-hidden="true"
-                  />
-                </span>
-                <p className="text-body-md text-text-primary font-medium pt-1.5">
-                  {benefit}
-                </p>
-              </div>
+              <ScrollReveal key={i} animation="fade-up" delay={i * 60} duration={550}>
+                <div className="flex items-start gap-4 rounded-[var(--radius-card)] bg-white p-5 shadow-card transition-all duration-[var(--duration-normal)] ease-[var(--ease-default)] hover:shadow-card-hover hover:-translate-y-0.5 sm:p-6">
+                  <span className="flex size-9 shrink-0 items-center justify-center rounded-full bg-teal-500/10">
+                    <Check
+                      className="size-4 text-teal-500"
+                      aria-hidden="true"
+                    />
+                  </span>
+                  <p className="text-body-md text-text-primary font-medium pt-1.5">
+                    {benefit}
+                  </p>
+                </div>
+              </ScrollReveal>
             ))}
           </div>
         </div>
 
         {/* ── FAQ — Contained Accordion ── */}
-        <div className="mt-12 md:mt-16 xl:mt-20 rounded-[var(--radius-container)] bg-teal-50 px-6 py-10 sm:px-10 sm:py-12 xl:px-14 xl:py-14">
-          <h3 className="text-heading-md text-text-primary mb-8">
-            Frequently Asked Questions
-          </h3>
-          <Accordion type="single" collapsible>
-            {active.faq.map((item, i) => (
-              <AccordionItem
-                key={i}
-                value={`faq-${i}`}
-                className="border-b border-teal-900/10 last:border-b-0"
-              >
-                <AccordionTrigger className="py-5 text-[clamp(1.125rem,2vw,1.375rem)] font-medium tracking-[-0.02em] text-text-primary hover:no-underline [&>svg]:size-5 [&>svg]:text-teal-500">
-                  {item.question}
-                </AccordionTrigger>
-                <AccordionContent className="text-body-md text-text-secondary leading-[1.6]">
-                  {item.answer}
-                </AccordionContent>
-              </AccordionItem>
-            ))}
-          </Accordion>
-        </div>
+        <ScrollReveal animation="fade-up" className="mt-12 md:mt-16 xl:mt-20">
+          <div className="rounded-[var(--radius-container)] bg-teal-50 px-6 py-10 sm:px-10 sm:py-12 xl:px-14 xl:py-14">
+            <h3 className="text-heading-md text-text-primary mb-8">
+              Frequently Asked Questions
+            </h3>
+            <Accordion type="single" collapsible>
+              {active.faq.map((item, i) => (
+                <AccordionItem
+                  key={i}
+                  value={`faq-${i}`}
+                  className="border-b border-teal-900/10 last:border-b-0"
+                >
+                  <AccordionTrigger className="py-5 text-[clamp(1.125rem,2vw,1.375rem)] font-medium tracking-[-0.02em] text-text-primary hover:no-underline [&>svg]:size-5 [&>svg]:text-teal-500">
+                    {item.question}
+                  </AccordionTrigger>
+                  <AccordionContent className="text-body-md text-text-secondary leading-[1.6]">
+                    {item.answer}
+                  </AccordionContent>
+                </AccordionItem>
+              ))}
+            </Accordion>
+          </div>
+        </ScrollReveal>
       </div>
     </div>
   );

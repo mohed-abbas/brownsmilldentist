@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
+import { ScrollReveal } from "@/components/scroll-reveal";
 import { servicesPage } from "@/content";
 
 export function WhyChooseSection() {
@@ -21,7 +22,7 @@ export function WhyChooseSection() {
         className="pointer-events-none absolute -bottom-24 -left-24 h-[300px] w-[300px] rounded-full bg-teal-300/[0.06] blur-[100px]"
       />
 
-      <div className="relative mx-auto max-w-[600px] text-center">
+      <ScrollReveal animation="fade-up" className="relative mx-auto max-w-[600px] text-center">
         <h2 className="text-heading-xl text-text-on-dark">
           {whyChoose.headline}
         </h2>
@@ -39,7 +40,7 @@ export function WhyChooseSection() {
             <Link href={cta.button.href}>{cta.button.label}</Link>
           </Button>
         </div>
-      </div>
+      </ScrollReveal>
     </section>
   );
 }

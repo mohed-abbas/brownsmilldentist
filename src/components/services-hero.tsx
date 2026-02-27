@@ -1,4 +1,9 @@
 import { servicesPage } from "@/content";
+import type { CSSProperties } from "react";
+
+function d(ms: number): CSSProperties {
+  return { "--reveal-delay": `${ms}ms` } as CSSProperties;
+}
 
 export function ServicesHero() {
   const { hero } = servicesPage;
@@ -20,13 +25,13 @@ export function ServicesHero() {
       />
 
       <div className="relative mx-auto max-w-[680px] text-center">
-        <p className="text-body-sm font-semibold tracking-[0.25em] uppercase text-teal-300">
+        <p className="reveal-fade-up text-body-sm font-semibold tracking-[0.25em] uppercase text-teal-300" style={d(0)}>
           {hero.eyebrow}
         </p>
-        <h1 className="mt-5 text-display-section text-text-on-dark">
+        <h1 className="reveal-fade-up mt-5 text-display-section text-text-on-dark" style={d(120)}>
           {hero.headline}
         </h1>
-        <p className="mx-auto mt-6 max-w-[520px] text-body-lg text-text-on-dark-muted">
+        <p className="reveal-fade-up mx-auto mt-6 max-w-[520px] text-body-lg text-text-on-dark-muted" style={d(240)}>
           {hero.description}
         </p>
       </div>
