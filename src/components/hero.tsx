@@ -15,12 +15,12 @@ export function Hero() {
   return (
     <section
       aria-label="Hero"
-      className="gradient-hero relative overflow-hidden rounded-[var(--radius-container)] xl:h-[874px]"
+      className="gradient-hero relative overflow-hidden rounded-[var(--radius-container)] xl:h-[650px]"
     >
       {/* Desktop layout: absolute positioning to match Figma overlapping columns */}
 
       {/* Left Column */}
-      <div className="relative z-10 flex flex-col gap-10 px-6 pt-8 pb-6 sm:gap-16 sm:px-10 sm:pt-16 sm:pb-10 xl:absolute xl:left-[3.59%] xl:top-[94px] xl:w-[36.06%] xl:gap-[92px] xl:px-0 xl:pt-0 xl:pb-0">
+      <div className="relative z-10 flex flex-col gap-10 px-6 pt-8 pb-6 sm:gap-16 sm:px-10 sm:pt-16 sm:pb-10 xl:absolute xl:left-[3.59%] xl:top-[40px] xl:w-[36.06%] xl:gap-[76px] xl:px-0 xl:pt-0 xl:pb-0">
         {/* Badges + Headline */}
         <div className="flex flex-col gap-[26px]">
           <div className="reveal-fade-up flex gap-[7px] flex-wrap" style={d(0)}>
@@ -34,7 +34,7 @@ export function Hero() {
         </div>
 
         {/* Subtext + CTA */}
-        <div className="flex flex-col gap-[34px] max-w-[325px]">
+        <div className="flex flex-col gap-[28px] max-w-[325px]">
           <p className="reveal-fade-up text-body-lg text-white" style={d(240)}>
             {hero.subtext}
           </p>
@@ -51,14 +51,11 @@ export function Hero() {
             <AvatarStack avatars={hero.avatars.patients} />
           </div>
 
-          <p className="reveal-fade-up text-body-lg text-white tracking-[-0.02em]" style={d(440)}>
-            {hero.membersStats}
-          </p>
         </div>
       </div>
 
       {/* Center Column — Hero Image (desktop: absolute, overlaps left column) */}
-      <div className="reveal-scale-in hidden xl:block xl:absolute xl:left-[33.66%] xl:top-[33px] xl:w-[40.35%] xl:h-[807px]" style={d(200)}>
+      <div className="reveal-scale-in hidden xl:block xl:absolute xl:left-[31.66%] xl:top-[30px] xl:w-[40.35%] xl:h-[600px]" style={d(200)}>
         <Image
           src={hero.images.center.src}
           alt={hero.images.center.alt}
@@ -70,9 +67,9 @@ export function Hero() {
       </div>
 
       {/* Right Column (desktop only) */}
-      <div className="reveal-fade-up hidden xl:flex xl:absolute xl:left-[77.61%] xl:top-[77px] xl:w-[20.42%] xl:h-[763px] flex-col justify-between" style={d(500)}>
+      <div className="reveal-fade-up hidden xl:flex xl:absolute xl:right-[3.61%] xl:top-[57px] xl:w-[25.42%] xl:h-[567px] flex-col justify-between" style={d(500)}>
         {/* Doctor Stats */}
-        <div className="flex flex-col gap-[23px] w-full">
+        <div className="flex flex-col gap-[17px] w-full">
           <p className="text-body-md text-white tracking-[-0.02em]">
             {hero.doctorStats}
           </p>
@@ -88,11 +85,11 @@ export function Hero() {
         </div>
 
         {/* Description + Image Card */}
-        <div className="flex flex-col gap-[35px]">
+        <div className="flex flex-col gap-[26px]">
           <p className="text-body-md text-white">
             {hero.sideText}
           </p>
-          <div className="h-[509px] w-full overflow-hidden rounded-[var(--radius-container)]">
+          <div className="h-[362px] w-full overflow-hidden rounded-[var(--radius-container)]">
             <Image
               src={hero.images.rightCard.src}
               alt={hero.images.rightCard.alt}

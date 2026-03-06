@@ -11,7 +11,7 @@ export function MoreFeatures() {
       {/* === TOP ZONE === */}
       <div className="flex flex-col gap-8 xl:flex-row xl:justify-between xl:gap-0">
         {/* Left column — headline + sub-row */}
-        <div className="flex flex-col xl:w-[44.1%] xl:shrink-0">
+        <div className="flex flex-col xl:w-[50%] xl:shrink-0">
           <ScrollReveal animation="fade-up">
             <h2 className="text-heading-xl text-teal-500">
               {moreFeatures.top.headline}

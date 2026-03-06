@@ -26,7 +26,7 @@ export function Navbar() {
     <>
       <nav
         aria-label="Main navigation"
-        className="reveal-fade-in gradient-hero relative z-30 flex h-[98px] items-center justify-between rounded-[var(--radius-container)] px-[25px]"
+        className="reveal-fade-in gradient-hero relative z-30 flex h-[88px] items-center justify-between rounded-[var(--radius-container)] px-[25px]"
       >
         <Link
           href="/"

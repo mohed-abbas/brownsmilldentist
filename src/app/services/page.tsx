@@ -15,8 +15,8 @@ export const metadata: Metadata = {
 export default function ServicesPage() {
   return (
     <>
-      <main className="container-page pt-5 xl:pt-[42px]">
-        <div className="flex flex-col gap-5 xl:gap-[41px]">
+      <main className="container-page pt-5 xl:pt-[22px]">
+        <div className="flex flex-col gap-5 xl:gap-[21px]">
           <Navbar />
           <ServicesHero />
         </div>
