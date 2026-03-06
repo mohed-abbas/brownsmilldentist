@@ -4,7 +4,6 @@ import { Navbar } from "@/components/navbar";
 import { ServicesHero } from "@/components/services-hero";
 import { ServicesTabs } from "@/components/services-tabs";
 import { WhyChooseSection } from "@/components/why-choose-section";
-import { Footer } from "@/components/footer";
 import { servicesPage } from "@/content";
 
 export const metadata: Metadata = {
@@ -29,7 +28,6 @@ export default function ServicesPage() {
           <WhyChooseSection />
         </div>
       </main>
-      <Footer />
     </>
   );
 }
