@@ -1,7 +1,7 @@
 import siteJson from "./site.json";
 import navigationJson from "./navigation.json";
 import heroJson from "./hero.json";
-import partnersJson from "./partners.json";
+import statsJson from "./stats.json";
 import featuresJson from "./features.json";
 import moreFeaturesJson from "./more-features.json";
 import doctorsJson from "./doctors.json";
@@ -15,7 +15,7 @@ import type {
   SiteContent,
   NavigationContent,
   HeroContent,
-  PartnersContent,
+  StatsContent,
   FeaturesContent,
   MoreFeaturesContent,
   DoctorsContent,
@@ -29,7 +29,7 @@ import type {
 export const site = siteJson satisfies SiteContent;
 export const navigation = navigationJson satisfies NavigationContent;
 export const hero = heroJson satisfies HeroContent;
-export const partners = partnersJson satisfies PartnersContent;
+export const stats = statsJson satisfies StatsContent;
 export const features = featuresJson satisfies FeaturesContent;
 export const moreFeatures = moreFeaturesJson satisfies MoreFeaturesContent;
 export const doctors = doctorsJson satisfies DoctorsContent;

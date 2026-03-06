@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { ScrollReveal } from "@/components/scroll-reveal";
 import { footer } from "@/content";
 
@@ -47,7 +48,7 @@ export function Footer() {
                 aria-label={social.alt}
                 className="opacity-80 transition-opacity duration-[var(--duration-fast)] hover:opacity-100"
               >
-                <img
+                <Image
                   src={social.icon}
                   alt={social.alt}
                   width={social.width}

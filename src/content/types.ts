@@ -41,13 +41,14 @@ export interface HeroContent {
   };
 }
 
-export interface Partner {
-  name: string;
-  icon: string | null;
+export interface StatItem {
+  value: number;
+  suffix: string;
+  label: string;
 }
 
-export interface PartnersContent {
-  partners: Partner[];
+export interface StatsContent {
+  stats: StatItem[];
 }
 
 export interface FeatureCard {

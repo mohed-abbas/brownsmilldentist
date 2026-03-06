@@ -1,19 +1,8 @@
 "use client";
 
 import { useEffect, useRef, useState, useCallback } from "react";
-
-interface Stat {
-  value: number;
-  suffix: string;
-  label: string;
-}
-
-const stats: Stat[] = [
-  { value: 14, suffix: "k+", label: "Happy Patients" },
-  { value: 5, suffix: "k+", label: "Active Members" },
-  { value: 142, suffix: "+", label: "Professional" },
-  { value: 20, suffix: "+", label: "Years Experience" },
-];
+import { stats as statsContent } from "@/content";
+import type { StatItem } from "@/content/types";
 
 function useCountUp(target: number, duration: number, start: boolean) {
   const [count, setCount] = useState(0);
@@ -39,7 +28,7 @@ function useCountUp(target: number, duration: number, start: boolean) {
   return count;
 }
 
-function StatItem({ stat, index, animate }: { stat: Stat; index: number; animate: boolean }) {
+function StatDisplay({ stat, index, animate }: { stat: StatItem; index: number; animate: boolean }) {
   const count = useCountUp(stat.value, 1600, animate);
 
   return (
@@ -84,9 +73,9 @@ export function StatsBar() {
       ref={ref}
       className="grid grid-cols-2 gap-y-8 gap-x-4 py-4 sm:grid-cols-4 sm:gap-x-0"
     >
-      {stats.map((stat, i) => (
+      {statsContent.stats.map((stat, i) => (
         <div key={stat.label} className="flex justify-center">
-          <StatItem stat={stat} index={i} animate={animate} />
+          <StatDisplay stat={stat} index={i} animate={animate} />
         </div>
       ))}
     </div>
