@@ -420,6 +420,23 @@
   .scrollbar-hide::-webkit-scrollbar {
     display: none;
   }
+
+  /* Section spacing */
+  .section-gap-top {
+    margin-top: var(--section-gap-mobile);
+  }
+
+  @media (min-width: 768px) {
+    .section-gap-top {
+      margin-top: var(--section-gap-tablet);
+    }
+  }
+
+  @media (min-width: 1280px) {
+    .section-gap-top {
+      margin-top: var(--section-gap);
+    }
+  }
 }
 
 /* Keyframe animations */

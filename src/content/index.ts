@@ -26,15 +26,15 @@ import type {
   ServicesPageContent,
 } from "./types";
 
-export const site = siteJson as SiteContent;
-export const navigation = navigationJson as NavigationContent;
-export const hero = heroJson as HeroContent;
-export const partners = partnersJson as PartnersContent;
-export const features = featuresJson as FeaturesContent;
-export const moreFeatures = moreFeaturesJson as MoreFeaturesContent;
-export const doctors = doctorsJson as DoctorsContent;
-export const testimonials = testimonialsJson as TestimonialsContent;
-export const faq = faqJson as FaqContent;
-export const contact = contactJson as ContactContent;
-export const footer = footerJson as FooterContent;
-export const servicesPage = servicesJson as ServicesPageContent;
+export const site = siteJson satisfies SiteContent;
+export const navigation = navigationJson satisfies NavigationContent;
+export const hero = heroJson satisfies HeroContent;
+export const partners = partnersJson satisfies PartnersContent;
+export const features = featuresJson satisfies FeaturesContent;
+export const moreFeatures = moreFeaturesJson satisfies MoreFeaturesContent;
+export const doctors = doctorsJson satisfies DoctorsContent;
+export const testimonials = testimonialsJson satisfies TestimonialsContent;
+export const faq = faqJson satisfies FaqContent;
+export const contact = contactJson satisfies ContactContent;
+export const footer = footerJson satisfies FooterContent;
+export const servicesPage = servicesJson satisfies ServicesPageContent;

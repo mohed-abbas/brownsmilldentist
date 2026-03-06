@@ -1,30 +1,9 @@
 import Link from "next/link";
-import {
-  Sparkles,
-  HeartPulse,
-  Crown,
-  ShieldCheck,
-  Pill,
-  Syringe,
-  Wrench,
-  Smile,
-  type LucideIcon,
-} from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { FeatureCard } from "@/components/feature-card";
 import { ScrollReveal } from "@/components/scroll-reveal";
 import { features as featuresContent } from "@/content";
-
-const iconMap: Record<string, LucideIcon> = {
-  Sparkles,
-  HeartPulse,
-  Crown,
-  ShieldCheck,
-  Pill,
-  Syringe,
-  Wrench,
-  Smile,
-};
+import { iconMap } from "@/lib/icon-map";
 
 export function OurFeatures() {
   return (

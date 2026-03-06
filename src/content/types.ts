@@ -58,7 +58,6 @@ export interface FeatureCard {
 }
 
 export interface FeaturesContent {
-  label: string;
   headline: string;
   description: string;
   cta: LinkItem;

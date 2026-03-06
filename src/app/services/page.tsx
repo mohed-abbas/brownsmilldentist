@@ -11,6 +11,24 @@ export const metadata: Metadata = {
   description: servicesPage.seo.description,
 };
 
+function ServicesTabsSkeleton() {
+  return (
+    <div className="animate-pulse">
+      <div className="rounded-[var(--radius-container)] bg-teal-50 px-2.5 py-2.5 sm:px-3 sm:py-3">
+        <div className="flex flex-wrap gap-1.5">
+          {Array.from({ length: 7 }).map((_, i) => (
+            <div key={i} className="h-10 w-28 rounded-[var(--radius-button)] bg-teal-100" />
+          ))}
+        </div>
+      </div>
+      <div className="mt-14 space-y-6">
+        <div className="h-48 rounded-[var(--radius-container)] bg-teal-50" />
+        <div className="h-32 rounded-[var(--radius-card)] bg-gray-100" />
+      </div>
+    </div>
+  );
+}
+
 export default function ServicesPage() {
   return (
     <>
@@ -20,11 +38,11 @@ export default function ServicesPage() {
           <ServicesHero />
         </div>
         <div className="mt-10 md:mt-14 xl:mt-20">
-          <Suspense>
+          <Suspense fallback={<ServicesTabsSkeleton />}>
             <ServicesTabs services={servicesPage.services} />
           </Suspense>
         </div>
-        <div className="mt-[var(--section-gap-mobile)] md:mt-[var(--section-gap-tablet)] xl:mt-[var(--section-gap)]">
+        <div className="section-gap-top">
           <WhyChooseSection />
         </div>
       </main>

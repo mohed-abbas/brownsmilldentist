@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useCallback } from "react";
+import { useState, useCallback, useEffect, useRef } from "react";
 import Image from "next/image";
 import { ArrowLeft, ArrowRight } from "lucide-react";
 import { ScrollReveal } from "@/components/scroll-reveal";
@@ -8,6 +8,7 @@ import { doctors as doctorsContent } from "@/content";
 
 export function OurDoctors() {
   const [currentIndex, setCurrentIndex] = useState(0);
+  const sectionRef = useRef<HTMLElement>(null);
   const doctors = doctorsContent.doctors;
   const doctor = doctors[currentIndex];
 
@@ -22,8 +23,33 @@ export function OurDoctors() {
     if (canNext) setCurrentIndex((i) => i + 1);
   }, [canNext]);
 
+  useEffect(() => {
+    const section = sectionRef.current;
+    if (!section) return;
+
+    function handleKeyDown(e: KeyboardEvent) {
+      if (e.key === "ArrowLeft") {
+        e.preventDefault();
+        if (canPrev) setCurrentIndex((i) => i - 1);
+      } else if (e.key === "ArrowRight") {
+        e.preventDefault();
+        if (canNext) setCurrentIndex((i) => i + 1);
+      }
+    }
+
+    section.addEventListener("keydown", handleKeyDown);
+    return () => section.removeEventListener("keydown", handleKeyDown);
+  }, [canPrev, canNext]);
+
   return (
-    <section id="doctor" aria-label="Our Doctors">
+    <section
+      id="doctor"
+      ref={sectionRef}
+      aria-label="Our Doctors"
+      aria-roledescription="carousel"
+      tabIndex={0}
+      className="outline-none focus-visible:ring-2 focus-visible:ring-teal-500 focus-visible:ring-offset-4 rounded-[var(--radius-container)]"
+    >
       <div className="flex flex-col gap-10 xl:gap-[85px]">
         {/* Header */}
         <ScrollReveal animation="fade-up" className="flex items-end justify-between gap-8">
@@ -59,7 +85,11 @@ export function OurDoctors() {
 
         {/* Featured Doctor Slideshow */}
         <ScrollReveal animation="scale-in" delay={100} className="overflow-hidden rounded-[var(--radius-container)] bg-white shadow-[0px_8px_14px_0px_rgba(0,0,0,0.07)]">
-          <div className="flex flex-col xl:flex-row">
+          <div
+            aria-live="polite"
+            aria-atomic="true"
+            className="flex flex-col xl:flex-row"
+          >
             {/* Image — cross-fade only on images */}
             <div className="relative aspect-[4/3] w-full shrink-0 sm:aspect-[3/2] xl:aspect-auto xl:w-[420px] xl:min-h-[440px]">
               {doctors.map((doc, i) => (
@@ -101,13 +131,14 @@ export function OurDoctors() {
               )}
 
               {/* Dot indicators */}
-              <div className="mt-8 flex items-center gap-2.5">
+              <div role="tablist" aria-label="Select doctor" className="mt-8 flex items-center gap-2.5">
                 {doctors.map((doc, i) => (
                   <button
                     key={doc.name}
+                    role="tab"
                     onClick={() => setCurrentIndex(i)}
                     aria-label={`View ${doc.name}`}
-                    aria-current={i === currentIndex ? "true" : undefined}
+                    aria-selected={i === currentIndex}
                     className={`h-2.5 rounded-full transition-all duration-[var(--duration-normal)] ease-[var(--ease-default)] ${
                       i === currentIndex
                         ? "w-8 bg-teal-500"

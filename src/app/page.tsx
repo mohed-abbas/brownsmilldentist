@@ -55,22 +55,22 @@ export default function Home() {
           <Hero />
           <StatsBar />
         </div>
-        <div className="mt-[var(--section-gap-mobile)] md:mt-[var(--section-gap-tablet)] xl:mt-[var(--section-gap)]">
+        <div className="section-gap-top">
           <OurFeatures />
         </div>
-        <div className="mt-[var(--section-gap-mobile)] md:mt-[var(--section-gap-tablet)] xl:mt-[var(--section-gap)]">
+        <div className="section-gap-top">
           <MoreFeatures />
         </div>
-        <div className="mt-[var(--section-gap-mobile)] md:mt-[var(--section-gap-tablet)] xl:mt-[var(--section-gap)]">
+        <div className="section-gap-top">
           <OurDoctors />
         </div>
-        <div className="mt-[var(--section-gap-mobile)] md:mt-[var(--section-gap-tablet)] xl:mt-[var(--section-gap)]">
+        <div className="section-gap-top">
           <Testimonials />
         </div>
-        <div className="mt-[var(--section-gap-mobile)] md:mt-[var(--section-gap-tablet)] xl:mt-[var(--section-gap)]">
+        <div className="section-gap-top">
           <AdvanceCare />
         </div>
-        <div className="mt-[var(--section-gap-mobile)] md:mt-[var(--section-gap-tablet)] xl:mt-[var(--section-gap)]">
+        <div className="section-gap-top">
           <ContactSection />
         </div>
       </main>
