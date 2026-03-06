@@ -161,7 +161,7 @@
 
   /* Brand: Font families */
   --font-haffer: "Haffer TRIAL", ui-sans-serif, system-ui, -apple-system, sans-serif;
-  --font-dm-sans: "DM Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-dm-sans: var(--font-dm-sans-next), "DM Sans", ui-sans-serif, system-ui, sans-serif;
 
   /* Brand: Type scale */
   --text-display-hero: 5.9375rem;
@@ -491,6 +491,31 @@
 
 .reveal-slide-right {
   animation: slideInRight var(--reveal-duration, 800ms) cubic-bezier(0.16, 1, 0.3, 1) var(--reveal-delay, 0ms) both;
+}
+
+/* Skip navigation */
+.skip-nav {
+  position: absolute;
+  left: -9999px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  z-index: 100;
+  padding: 1rem 1.5rem;
+  background: var(--teal-900);
+  color: white;
+  font-weight: 600;
+  border-radius: var(--radius-button);
+  text-decoration: none;
+}
+.skip-nav:focus {
+  position: fixed;
+  top: 1rem;
+  left: 1rem;
+  width: auto;
+  height: auto;
+  overflow: visible;
 }
 
 /* Reduced motion */

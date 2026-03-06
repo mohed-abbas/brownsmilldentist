@@ -14,15 +14,15 @@
       "title": "Company",
       "links": [
         { "label": "About Us", "href": "#" },
-        { "label": "Our Doctors", "href": "#doctor" },
-        { "label": "Contact", "href": "#contact" }
+        { "label": "Our Doctors", "href": "/#doctor" },
+        { "label": "Contact", "href": "/#contact" }
       ]
     },
     {
       "title": "Support",
       "links": [
-        { "label": "FAQ", "href": "#faq" },
-        { "label": "Book Appointment", "href": "#contact" },
+        { "label": "FAQ", "href": "/#faq" },
+        { "label": "Book Appointment", "href": "/#contact" },
         { "label": "Find Location", "href": "#" }
       ]
     },
